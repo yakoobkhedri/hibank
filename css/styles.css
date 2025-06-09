@@ -498,10 +498,15 @@ footer p,
 .w-71 {
     width: 71px !important;
 }
+.w-78 {
+    width: 78px !important;
+}
 .w-84 {
     width: 84px !important;
 }
-
+.w-112 {
+    width: 112px;
+}
 .w-126 {
     width: 126px;
 }
@@ -509,7 +514,9 @@ footer p,
 .w-120 {
     width: 120px;
 }
-
+.w-122 {
+    width: 122px;
+}
 .w-137 {
     width: 137px !important;
 }
@@ -830,11 +837,18 @@ footer p,
 .text-main2 {
     color: #020058;
 }
-
+.text-main3{
+    color: #005AFE;
+}
 .text-yellow {
     color: #FFD500;
 }
-
+.text-yellow2{
+    color: #F29200;
+}
+.text-red{
+    color: #FE0000;
+}
 .text-success {
     color: #46A808 !important;
 }
@@ -882,7 +896,9 @@ footer p,
 .text-gray4 {
     color: #9C9D9D;
 }
-
+.text-green{
+    color: #00B100;
+}
 .check {
     position: relative;
 }
@@ -1146,6 +1162,9 @@ input:focus {
 .bg-main3 {
     background-color: #14489D33;
 }
+.bg-main4{
+    background-color: #6DACFF;
+}
 .bg-sky{
     background-color: #F6F9FF;
 }
@@ -1191,6 +1210,9 @@ input:focus {
 }
 .bg-gray8{
     background-color: #E8E7FB;
+}
+.bg-gray9{
+    background-color: #C3C3C3;
 }
 /* box shadow */
 .shadow-1 {
