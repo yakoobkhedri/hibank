@@ -465,6 +465,9 @@ footer p,
 .w-41 {
     width: 41px;
 }
+.w-42 {
+    width: 42px;
+}
 .w-43 {
     width: 43px;
 }
@@ -516,6 +519,9 @@ footer p,
 }
 .w-122 {
     width: 122px;
+}
+.w-135 {
+    width: 135px;
 }
 .w-137 {
     width: 137px !important;
@@ -617,7 +623,9 @@ footer p,
 .h-24 {
     height: 24px;
 }
-
+.h-28 {
+    height: 28px;
+}
 .h-30 {
     height: 30px;
 }
@@ -1118,6 +1126,9 @@ input:focus {
 .border-main2{
     border: 1px solid #005AFE66;
 }
+.border-main3{
+    border: 1px solid #005AFE;
+}
 .border-sky{
     border: 1px solid #EFF4FF;
 }
@@ -1154,8 +1165,8 @@ input:focus {
 }
 
 .form-check-input:checked {
-    background-color: #46A808;
-    border-color: #46A808;
+    background-color: #005afe !important;
+    border-color: #005afe;
 }
 
 .form-switch .form-check-input {
@@ -1544,7 +1555,7 @@ input::placeholder {
     color: #005AFE;
 }
 .tabs:hover svg path,.tabs.active svg path{
-    stroke: #005AFE;
+    stroke: #005AFE !important;
 }
 /* scroll */
 .hiddenScroll::-webkit-scrollbar {
