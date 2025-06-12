@@ -1718,13 +1718,13 @@ input[type='email'] {
 @media (max-width: 1070px) {
     #sidebar {
         position: fixed;
-        top: auto;
+        top: 0;
         bottom: 0;
-        right: 0;
+        right: -1036px;
         transition: all .4s;
         height: auto;
-        left: 0;
-        width: 95%;
+        left: auto;
+        width: 100%;
         margin-right: auto;
         margin-left: auto;
         border-top-left-radius: 10px;
@@ -1732,47 +1732,12 @@ input[type='email'] {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         box-shadow: 0px 0px 8px 0px #0000001A;
-        padding-top: 8px !important;
-        padding-bottom: 8px !important;
-        padding-right: 34px !important;
-        padding-left: 34px !important;
+        z-index: 99;
     }
 
     #sidebar.open {
         right: 0;
     }
-
-    #pannelList {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 0 !important;
-        padding-top: 0 !important;
-        margin-bottom: 0 !important;
-    }
-
-    #pannelList li>a:hover,
-    #pannelList li>a.active,
-    #pannelList li>div:first-child.active,
-    #pannelList li>div:first-child:hover,
-    #pannelList li>div:first-child.active {
-        background-color: transparent;
-    }
-
-    #pannelList li>a:hover p,
-    #pannelList li>a.active p,
-    #pannelList li>div:hover p,
-    #pannelList li>div.active p {
-        color: #164194 !important;
-    }
-
-    #pannelList li>a:hover svg path,
-    #pannelList li>a.active svg path,
-    #pannelList li>div:hover svg path,
-    #pannelList li>div.active svg path {
-        stroke: #FFD500 !important;
-    }
-
     .gap-1071-2 {
         gap: 0.7rem !important;
     }
