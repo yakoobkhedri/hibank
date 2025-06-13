@@ -16,10 +16,12 @@
 <body>
 
   <section class="d-flex gap-3 m-md-5 m-3">
-    <div id="sidebar" class="w-288">
-      <div
-        class="rounded-10 flex-shrink-0 d-flex flex-column justify-content-between bg-white h-100vh overflow-1071-hidden overflow-auto p-3 py-4 z-20">
+    <div id="sidebar" class="w-288 h-100vh overflow-1071-hidden overflow-auto flex-shrink-0">
+      <div class="rounded-10 d-flex flex-column justify-content-between bg-white p-3 py-4 z-20">
         <div>
+          <svg id="closeSidebar" class="d-1071-none mb-3 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708"></path>
+            </svg>
           <a><img class="w-71 h-71 rounded-circle d-block mx-auto" alt="logo" src="images/Ellipse 212.png"></a>
           <p class="fw-bold fs-18 text-center mt-3">مرتضی شکوری</p>
           <div
@@ -178,6 +180,14 @@
     </div>
     <div class="flex-grow-1 h-100vh h-lg-auto overflow-auto">
       <div class="rounded-10 bg-sky p-3 pt-4">
+        <div class="d-1071-none mb-2" id="openSidebar">
+          <svg class="cursor-pointer" width="26" height="26" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2 5.995C2 5.445 2.446 5 2.995 5L11.005 5C11.2689 5 11.522 5.10483 11.7086 5.29143C11.8952 5.47803 12 5.73111 12 5.995C12 6.25889 11.8952 6.51197 11.7086 6.69857C11.522 6.88517 11.2689 6.99 11.005 6.99L2.995 6.99C2.445 6.99 2 6.545 2 5.995ZM2 12C2 11.45 2.446 11.005 2.995 11.005L21.005 11.005C21.2689 11.005 21.522 11.1098 21.7086 11.2964C21.8952 11.483 22 11.7361 22 12C22 12.2639 21.8952 12.517 21.7086 12.7036C21.522 12.8902 21.2689 12.995 21.005 12.995L2.995 12.995C2.445 12.995 2 12.549 2 12ZM2.995 17.01C2.73111 17.01 2.47803 17.1148 2.29143 17.3014C2.10483 17.488 2 17.7411 2 18.005C2 18.2689 2.10483 18.522 2.29143 18.7086C2.47803 18.8952 2.73111 19 2.995 19L15.005 19C15.1357 19 15.2651 18.9743 15.3858 18.9243C15.5065 18.8743 15.6162 18.801 15.7086 18.7086C15.801 18.6162 15.8743 18.5065 15.9243 18.3858C15.9743 18.2651 16 18.1357 16 18.005C16 17.8743 15.9743 17.7449 15.9243 17.6242C15.8743 17.5035 15.801 17.3938 15.7086 17.3014C15.6162 17.209 15.5065 17.1357 15.3858 17.0857C15.2651 17.0357 15.1357 17.01 15.005 17.01L2.995 17.01Z"
+              fill="#1E2D48"></path>
+          </svg>
+        </div>
         <div class="flex-wrap d-flex align-items-center justify-content-between gap-3">
           <div class="d-flex align-items-center gap-2">
             <p class="mb-0 fs-18"><span class="fw-bold">مرتضی شکوری</span> به پنل کاربری خوش آمدید.</p>
@@ -252,7 +262,7 @@
           </a>
         </div>
         <div class="mt-0 row g-4">
-          <div class="col-lg-4 col-md-6">
+          <div class="col-xl-4 col-md-6">
             <div class="bg-white rounded-10 border-sky p-3 position-relative h-100 overflow-hidden">
               <img alt="img" src="images/Rectangle 1.png" class="position-absolute bottom-0 start-0">
               <img alt="img" src="images/Rectangle 2.png" class="position-absolute bottom-0 start-0">
@@ -306,7 +316,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-xl-4 col-md-6">
             <div class="bg-white rounded-10 border-sky p-3 position-relative h-100 overflow-hidden">
               <img alt="img" src="images/Rectangle 1.png" class="position-absolute bottom-0 start-0">
               <img alt="img" src="images/Rectangle 2.png" class="position-absolute bottom-0 start-0">
@@ -337,7 +347,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-xl-4 col-md-6">
             <div class="bg-white rounded-10 border-sky p-3 position-relative h-100 overflow-hidden">
               <img alt="img" src="images/Rectangle 1.png" class="position-absolute bottom-0 start-0">
               <img alt="img" src="images/Rectangle 2.png" class="position-absolute bottom-0 start-0">
@@ -2325,7 +2335,8 @@
                   </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between gap-2 mt-3 flex-wrap">
-                  <div class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
+                  <div
+                    class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
                     <div class="d-flex align-items-center gap-4">
                       <p class="mb-0">وضعیت:</p>
                       <p class="mb-0 fs-14 fw-bold text-main3">پرداخت‌شده </p>
@@ -2381,7 +2392,8 @@
                   </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between gap-2 mt-3 flex-wrap">
-                  <div class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
+                  <div
+                    class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
                     <div class="d-flex align-items-center gap-4">
                       <p class="mb-0">وضعیت:</p>
                       <p class="mb-0 fs-14 fw-bold text-main3">در انتظار پرداخت </p>
@@ -2430,7 +2442,8 @@
                   </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between gap-2 mt-3 flex-wrap">
-                  <div class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
+                  <div
+                    class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
                     <div class="d-flex align-items-center gap-4">
                       <p class="mb-0">وضعیت:</p>
                       <p class="mb-0 fs-14 fw-bold text-main3">دیرکرد ۷ روز</p>
@@ -2481,7 +2494,8 @@
                   </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between gap-2 mt-3 flex-wrap">
-                  <div class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
+                  <div
+                    class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
                     <div class="d-flex align-items-center gap-4">
                       <p class="mb-0">وضعیت:</p>
                       <p class="mb-0 fs-14 fw-bold text-main3">قابل پرداخت از تاریخ ۱۴۰۴/۰۲/۱۰ </p>
@@ -2526,7 +2540,8 @@
                   </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between gap-2 mt-3 flex-wrap">
-                  <div class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
+                  <div
+                    class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
                     <div class="d-flex align-items-center gap-4">
                       <p class="mb-0">وضعیت:</p>
                       <p class="mb-0 fs-14 fw-bold text-main3">پرداخت‌شده </p>
@@ -2582,7 +2597,8 @@
                   </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between gap-2 mt-3 flex-wrap">
-                  <div class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
+                  <div
+                    class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
                     <div class="d-flex align-items-center gap-4">
                       <p class="mb-0">وضعیت:</p>
                       <p class="mb-0 fs-14 fw-bold text-main3">در انتظار پرداخت </p>
@@ -2631,7 +2647,8 @@
                   </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between gap-2 mt-3 flex-wrap">
-                  <div class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
+                  <div
+                    class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
                     <div class="d-flex align-items-center gap-4">
                       <p class="mb-0">وضعیت:</p>
                       <p class="mb-0 fs-14 fw-bold text-main3">دیرکرد ۷ روز</p>
@@ -2682,7 +2699,8 @@
                   </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between gap-2 mt-3 flex-wrap">
-                  <div class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
+                  <div
+                    class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
                     <div class="d-flex align-items-center gap-4">
                       <p class="mb-0">وضعیت:</p>
                       <p class="mb-0 fs-14 fw-bold text-main3">قابل پرداخت از تاریخ ۱۴۰۴/۰۲/۱۰ </p>
@@ -2727,7 +2745,8 @@
                   </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between gap-2 mt-3 flex-wrap">
-                  <div class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
+                  <div
+                    class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
                     <div class="d-flex align-items-center gap-4">
                       <p class="mb-0">وضعیت:</p>
                       <p class="mb-0 fs-14 fw-bold text-main3">پرداخت‌شده </p>
@@ -2783,7 +2802,8 @@
                   </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between gap-2 mt-3 flex-wrap">
-                  <div class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
+                  <div
+                    class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
                     <div class="d-flex align-items-center gap-4">
                       <p class="mb-0">وضعیت:</p>
                       <p class="mb-0 fs-14 fw-bold text-main3">در انتظار پرداخت </p>
@@ -2832,7 +2852,8 @@
                   </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between gap-2 mt-3 flex-wrap">
-                  <div class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
+                  <div
+                    class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
                     <div class="d-flex align-items-center gap-4">
                       <p class="mb-0">وضعیت:</p>
                       <p class="mb-0 fs-14 fw-bold text-main3">دیرکرد ۷ روز</p>
@@ -2883,7 +2904,8 @@
                   </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between gap-2 mt-3 flex-wrap">
-                  <div class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
+                  <div
+                    class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
                     <div class="d-flex align-items-center gap-4">
                       <p class="mb-0">وضعیت:</p>
                       <p class="mb-0 fs-14 fw-bold text-main3">قابل پرداخت از تاریخ ۱۴۰۴/۰۲/۱۰ </p>
@@ -2928,7 +2950,8 @@
                   </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between gap-2 mt-3 flex-wrap">
-                  <div class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
+                  <div
+                    class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
                     <div class="d-flex align-items-center gap-4">
                       <p class="mb-0">وضعیت:</p>
                       <p class="mb-0 fs-14 fw-bold text-main3">پرداخت‌شده </p>
@@ -2984,7 +3007,8 @@
                   </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between gap-2 mt-3 flex-wrap">
-                  <div class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
+                  <div
+                    class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
                     <div class="d-flex align-items-center gap-4">
                       <p class="mb-0">وضعیت:</p>
                       <p class="mb-0 fs-14 fw-bold text-main3">در انتظار پرداخت </p>
@@ -3033,7 +3057,8 @@
                   </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between gap-2 mt-3 flex-wrap">
-                  <div class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
+                  <div
+                    class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
                     <div class="d-flex align-items-center gap-4">
                       <p class="mb-0">وضعیت:</p>
                       <p class="mb-0 fs-14 fw-bold text-main3">دیرکرد ۷ روز</p>
@@ -3084,7 +3109,8 @@
                   </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between gap-2 mt-3 flex-wrap">
-                  <div class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
+                  <div
+                    class="d-flex align-items-center gap-sm-4 gap-2 justify-content-center justify-content-sm-start flex-wrap">
                     <div class="d-flex align-items-center gap-4">
                       <p class="mb-0">وضعیت:</p>
                       <p class="mb-0 fs-14 fw-bold text-main3">قابل پرداخت از تاریخ ۱۴۰۴/۰۲/۱۰ </p>
@@ -3192,7 +3218,8 @@
                             برای انتقال وجه، حساب بانکی باید ثبت و تأیید شده باشد. انتقال ممکن است تا ۳ روز کاری طول
                             بکشد. قبل از ثبت درخواست، اطلاعات را با دقت بررسی کنید.
                           </p>
-                          <div class="mt-4 d-flex align-items-center justify-content-between gap-3 flex-column flex-sm-row">
+                          <div
+                            class="mt-4 d-flex align-items-center justify-content-between gap-3 flex-column flex-sm-row">
                             <input class="border outline-none h-48 rounded-10 px-4 flex-grow-1 w-100"
                               placeholder="مبلغ را وارد کنید">
                             <input class="border outline-none h-48 rounded-10 px-4 flex-grow-1 w-100"
@@ -3210,7 +3237,8 @@
                             برای انتقال وجه، حساب بانکی باید ثبت و تأیید شده باشد. انتقال ممکن است تا ۳ روز کاری طول
                             بکشد. قبل از ثبت درخواست، اطلاعات را با دقت بررسی کنید.
                           </p>
-                          <div class="mt-4 d-flex align-items-center justify-content-between gap-3 flex-column flex-sm-row">
+                          <div
+                            class="mt-4 d-flex align-items-center justify-content-between gap-3 flex-column flex-sm-row">
                             <input class="border outline-none h-48 rounded-10 px-4 flex-grow-1 w-100"
                               placeholder="مبلغ را وارد کنید">
                             <input class="border outline-none h-48 rounded-10 px-4 flex-grow-1 w-100"
@@ -3354,25 +3382,26 @@
                   <div class="rounded-10 bg-white p-4">
                     <ul class="nav nav-tabs mt-4 p-0 border-bottom-0" id="myTab" role="tablist">
                       <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="home4-tab" data-bs-toggle="tab"
-                          data-bs-target="#home4-tab-pane" type="button" role="tab" aria-controls="home4-tab-pane"
+                        <button class="nav-link active" id="home5-tab" data-bs-toggle="tab"
+                          data-bs-target="#home5-tab-pane" type="button" role="tab" aria-controls="home5-tab-pane"
                           aria-selected="true">انتقال وجه</button>
                       </li>
                       <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="profile4-tab" data-bs-toggle="tab"
-                          data-bs-target="#profile4-tab-pane" type="button" role="tab" aria-controls="profile4-tab-pane"
+                        <button class="nav-link" id="profile5-tab" data-bs-toggle="tab"
+                          data-bs-target="#profile5-tab-pane" type="button" role="tab" aria-controls="profile5-tab-pane"
                           aria-selected="false">شارژ کیف پول</button>
                       </li>
                     </ul>
                     <div class="tab-content mt-4" id="myTabContent">
-                      <div class="tab-pane fade show active" id="home4-tab-pane" role="tabpanel"
-                        aria-labelledby="home4-tab" tabindex="0">
+                      <div class="tab-pane fade show active" id="home5-tab-pane" role="tabpanel"
+                        aria-labelledby="home5-tab" tabindex="0">
                         <div>
                           <p class="fs-14 fw-bold text-main3 lh-lg text-justify">
                             برای انتقال وجه، حساب بانکی باید ثبت و تأیید شده باشد. انتقال ممکن است تا ۳ روز کاری طول
                             بکشد. قبل از ثبت درخواست، اطلاعات را با دقت بررسی کنید.
                           </p>
-                          <div class="mt-4 d-flex align-items-center justify-content-between gap-3 flex-column flex-sm-row">
+                          <div
+                            class="mt-4 d-flex align-items-center justify-content-between gap-3 flex-column flex-sm-row">
                             <input class="border outline-none h-48 rounded-10 px-4 flex-grow-1 w-100"
                               placeholder="مبلغ را وارد کنید">
                             <input class="border outline-none h-48 rounded-10 px-4 flex-grow-1 w-100"
@@ -3383,14 +3412,15 @@
                             وجه</a>
                         </div>
                       </div>
-                      <div class="tab-pane fade" id="profile4-tab-pane" role="tabpanel" aria-labelledby="profile4-tab"
+                      <div class="tab-pane fade" id="profile5-tab-pane" role="tabpanel" aria-labelledby="profile5-tab"
                         tabindex="0">
                         <div>
                           <p class="fs-14 fw-bold text-main3 lh-lg text-justify">
                             برای انتقال وجه، حساب بانکی باید ثبت و تأیید شده باشد. انتقال ممکن است تا ۳ روز کاری طول
                             بکشد. قبل از ثبت درخواست، اطلاعات را با دقت بررسی کنید.
                           </p>
-                          <div class="mt-4 d-flex align-items-center justify-content-between gap-3 flex-column flex-sm-row">
+                          <div
+                            class="mt-4 d-flex align-items-center justify-content-between gap-3 flex-column flex-sm-row">
                             <input class="border outline-none h-48 rounded-10 px-4 flex-grow-1 w-100"
                               placeholder="مبلغ را وارد کنید">
                             <input class="border outline-none h-48 rounded-10 px-4 flex-grow-1 w-100"
@@ -3534,25 +3564,26 @@
                   <div class="rounded-10 bg-white p-4">
                     <ul class="nav nav-tabs mt-4 p-0 border-bottom-0" id="myTab" role="tablist">
                       <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="home4-tab" data-bs-toggle="tab"
-                          data-bs-target="#home4-tab-pane" type="button" role="tab" aria-controls="home4-tab-pane"
+                        <button class="nav-link active" id="home6-tab" data-bs-toggle="tab"
+                          data-bs-target="#home6-tab-pane" type="button" role="tab" aria-controls="home6-tab-pane"
                           aria-selected="true">انتقال وجه</button>
                       </li>
                       <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="profile4-tab" data-bs-toggle="tab"
-                          data-bs-target="#profile4-tab-pane" type="button" role="tab" aria-controls="profile4-tab-pane"
+                        <button class="nav-link" id="profile6-tab" data-bs-toggle="tab"
+                          data-bs-target="#profile6-tab-pane" type="button" role="tab" aria-controls="profile6-tab-pane"
                           aria-selected="false">شارژ کیف پول</button>
                       </li>
                     </ul>
                     <div class="tab-content mt-4" id="myTabContent">
-                      <div class="tab-pane fade show active" id="home4-tab-pane" role="tabpanel"
-                        aria-labelledby="home4-tab" tabindex="0">
+                      <div class="tab-pane fade show active" id="home6-tab-pane" role="tabpanel"
+                        aria-labelledby="home6-tab" tabindex="0">
                         <div>
                           <p class="fs-14 fw-bold text-main3 lh-lg text-justify">
                             برای انتقال وجه، حساب بانکی باید ثبت و تأیید شده باشد. انتقال ممکن است تا ۳ روز کاری طول
                             بکشد. قبل از ثبت درخواست، اطلاعات را با دقت بررسی کنید.
                           </p>
-                          <div class="mt-4 d-flex align-items-center justify-content-between gap-3 flex-column flex-sm-row">
+                          <div
+                            class="mt-4 d-flex align-items-center justify-content-between gap-3 flex-column flex-sm-row">
                             <input class="border outline-none h-48 rounded-10 px-4 flex-grow-1 w-100"
                               placeholder="مبلغ را وارد کنید">
                             <input class="border outline-none h-48 rounded-10 px-4 flex-grow-1 w-100"
@@ -3563,14 +3594,15 @@
                             وجه</a>
                         </div>
                       </div>
-                      <div class="tab-pane fade" id="profile4-tab-pane" role="tabpanel" aria-labelledby="profile4-tab"
+                      <div class="tab-pane fade" id="profile6-tab-pane" role="tabpanel" aria-labelledby="profile6-tab"
                         tabindex="0">
                         <div>
                           <p class="fs-14 fw-bold text-main3 lh-lg text-justify">
                             برای انتقال وجه، حساب بانکی باید ثبت و تأیید شده باشد. انتقال ممکن است تا ۳ روز کاری طول
                             بکشد. قبل از ثبت درخواست، اطلاعات را با دقت بررسی کنید.
                           </p>
-                          <div class="mt-4 d-flex align-items-center justify-content-between gap-3 flex-column flex-sm-row">
+                          <div
+                            class="mt-4 d-flex align-items-center justify-content-between gap-3 flex-column flex-sm-row">
                             <input class="border outline-none h-48 rounded-10 px-4 flex-grow-1 w-100"
                               placeholder="مبلغ را وارد کنید">
                             <input class="border outline-none h-48 rounded-10 px-4 flex-grow-1 w-100"
@@ -3714,25 +3746,26 @@
                   <div class="rounded-10 bg-white p-4">
                     <ul class="nav nav-tabs mt-4 p-0 border-bottom-0" id="myTab" role="tablist">
                       <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="home4-tab" data-bs-toggle="tab"
-                          data-bs-target="#home4-tab-pane" type="button" role="tab" aria-controls="home4-tab-pane"
+                        <button class="nav-link active" id="home7-tab" data-bs-toggle="tab"
+                          data-bs-target="#home7-tab-pane" type="button" role="tab" aria-controls="home7-tab-pane"
                           aria-selected="true">انتقال وجه</button>
                       </li>
                       <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="profile4-tab" data-bs-toggle="tab"
-                          data-bs-target="#profile4-tab-pane" type="button" role="tab" aria-controls="profile4-tab-pane"
+                        <button class="nav-link" id="profile7-tab" data-bs-toggle="tab"
+                          data-bs-target="#profile7-tab-pane" type="button" role="tab" aria-controls="profile7-tab-pane"
                           aria-selected="false">شارژ کیف پول</button>
                       </li>
                     </ul>
                     <div class="tab-content mt-4" id="myTabContent">
-                      <div class="tab-pane fade show active" id="home4-tab-pane" role="tabpanel"
-                        aria-labelledby="home4-tab" tabindex="0">
+                      <div class="tab-pane fade show active" id="home7-tab-pane" role="tabpanel"
+                        aria-labelledby="home7-tab" tabindex="0">
                         <div>
                           <p class="fs-14 fw-bold text-main3 lh-lg text-justify">
                             برای انتقال وجه، حساب بانکی باید ثبت و تأیید شده باشد. انتقال ممکن است تا ۳ روز کاری طول
                             بکشد. قبل از ثبت درخواست، اطلاعات را با دقت بررسی کنید.
                           </p>
-                          <div class="mt-4 d-flex align-items-center justify-content-between gap-3 flex-column flex-sm-row">
+                          <div
+                            class="mt-4 d-flex align-items-center justify-content-between gap-3 flex-column flex-sm-row">
                             <input class="border outline-none h-48 rounded-10 px-4 flex-grow-1 w-100"
                               placeholder="مبلغ را وارد کنید">
                             <input class="border outline-none h-48 rounded-10 px-4 flex-grow-1 w-100"
@@ -3743,14 +3776,15 @@
                             وجه</a>
                         </div>
                       </div>
-                      <div class="tab-pane fade" id="profile4-tab-pane" role="tabpanel" aria-labelledby="profile4-tab"
+                      <div class="tab-pane fade" id="profile7-tab-pane" role="tabpanel" aria-labelledby="profile7-tab"
                         tabindex="0">
                         <div>
                           <p class="fs-14 fw-bold text-main3 lh-lg text-justify">
                             برای انتقال وجه، حساب بانکی باید ثبت و تأیید شده باشد. انتقال ممکن است تا ۳ روز کاری طول
                             بکشد. قبل از ثبت درخواست، اطلاعات را با دقت بررسی کنید.
                           </p>
-                          <div class="mt-4 d-flex align-items-center justify-content-between gap-3 flex-column flex-sm-row">
+                          <div
+                            class="mt-4 d-flex align-items-center justify-content-between gap-3 flex-column flex-sm-row">
                             <input class="border outline-none h-48 rounded-10 px-4 flex-grow-1 w-100"
                               placeholder="مبلغ را وارد کنید">
                             <input class="border outline-none h-48 rounded-10 px-4 flex-grow-1 w-100"
@@ -3949,10 +3983,12 @@
                 <img alt="img" src="images/Rectangle 2.png" class="position-absolute bottom-0 start-0">
                 <p class="fw-bold position-relative">کد دعوت شما</p>
                 <p class="fs-14 position-relative">با معرفی دوستان خود باهم برنده شوید و تخفیف بگیرید!</p>
-                <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between gap-4 gap-sm-2 position-relative">
+                <div
+                  class="d-flex flex-column flex-sm-row align-items-center justify-content-between gap-4 gap-sm-2 position-relative">
                   <a
                     class="d-flex align-items-center justify-content-center gap-2 rounded-10 text-white fs-14 py-3 px-4 bg-main">
-                    <svg class="flex-shrink-0" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="flex-shrink-0" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M14.3025 10.68C14.085 10.8975 13.74 10.8975 13.53 10.68C13.3125 10.4625 13.3125 10.1175 13.53 9.90745C15.03 8.40745 15.03 5.96995 13.53 4.47745C12.03 2.98495 9.59249 2.97745 8.09999 4.47745C6.60749 5.97745 6.59999 8.41495 8.09999 9.90745C8.31749 10.125 8.31749 10.47 8.09999 10.68C7.88249 10.8975 7.53749 10.8975 7.32749 10.68C5.39999 8.75245 5.39999 5.61745 7.32749 3.69745C9.25499 1.77745 12.39 1.76995 14.31 3.69745C16.23 5.62495 16.23 8.75245 14.3025 10.68Z"
                         fill="white" />
@@ -4092,7 +4128,8 @@
           </div>
           <div class="mt-5 tabsContent">
             <div data-1d="1">
-              <div class="bg-white rounded-10 p-4 flex-wrap d-flex align-items-center justify-content-between gap-4 mb-5">
+              <div
+                class="bg-white rounded-10 p-4 flex-wrap d-flex align-items-center justify-content-between gap-4 mb-5">
                 <div class="d-flex align-items-center gap-4 flex-wrap">
                   <div class="position-relative">
                     <img alt="img" src="images/Ellipse 212.png" class="w-71 h-71 d-block rounded-circle">
@@ -4269,58 +4306,81 @@
                     <input class="flex-grow-1 w-100 bg-transparent outline-none border-0 fs-14" placeholder="محل صدور">
                   </div>
                 </div>
-                <div class="rounded-10 border-main3 p-3 d-flex align-items-center justify-content-center gap-3 cursor-pointer mb-4">
+                <div
+                  class="rounded-10 border-main3 p-3 d-flex align-items-center justify-content-center gap-3 cursor-pointer mb-4">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16 12.75H12.75V16C12.75 16.41 12.41 16.75 12 16.75C11.59 16.75 11.25 16.41 11.25 16V12.75H8C7.59 12.75 7.25 12.41 7.25 12C7.25 11.59 7.59 11.25 8 11.25H11.25V8C11.25 7.59 11.59 7.25 12 7.25C12.41 7.25 12.75 7.59 12.75 8V11.25H16C16.41 11.25 16.75 11.59 16.75 12C16.75 12.41 16.41 12.75 16 12.75Z" fill="#005AFE"/>
-</svg>
+                    <path
+                      d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16 12.75H12.75V16C12.75 16.41 12.41 16.75 12 16.75C11.59 16.75 11.25 16.41 11.25 16V12.75H8C7.59 12.75 7.25 12.41 7.25 12C7.25 11.59 7.59 11.25 8 11.25H11.25V8C11.25 7.59 11.59 7.25 12 7.25C12.41 7.25 12.75 7.59 12.75 8V11.25H16C16.41 11.25 16.75 11.59 16.75 12C16.75 12.41 16.41 12.75 16 12.75Z"
+                      fill="#005AFE" />
+                  </svg>
                   <p class="mb-0 fw-bold text-main3">افزودن آدرس</p>
                 </div>
-                  <div class="d-flex align-items-center flex-column flex-sm-row gap-2 mb-4">
-                    <div class="flex-grow-1 w-sm-100">
-                      <div class="border rounded-10 p-3 d-flex align-items-center gap-2 flex-grow-1 mb-3">
-                        <svg class="flex-shrink-0" width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M16.2004 6.3375C15.4129 2.8725 12.3904 1.3125 9.73544 1.3125C9.73544 1.3125 9.73544 1.3125 9.72794 1.3125C7.08044 1.3125 4.05044 2.865 3.26294 6.33C2.38544 10.2 4.75544 13.4775 6.90044 15.54C7.69544 16.305 8.71544 16.6875 9.73544 16.6875C10.7554 16.6875 11.7754 16.305 12.5629 15.54C14.7079 13.4775 17.0779 10.2075 16.2004 6.3375ZM9.73544 10.095C8.43044 10.095 7.37294 9.0375 7.37294 7.7325C7.37294 6.4275 8.43044 5.37 9.73544 5.37C11.0404 5.37 12.0979 6.4275 12.0979 7.7325C12.0979 9.0375 11.0404 10.095 9.73544 10.095Z" fill="#E5E5E5"/>
-    </svg>
-                                <select class="flex-grow-1 w-100 bg-transparent outline-none border-0 fs-14">
+                <div class="d-flex align-items-center flex-column flex-sm-row gap-2 mb-4">
+                  <div class="flex-grow-1 w-sm-100">
+                    <div class="border rounded-10 p-3 d-flex align-items-center gap-2 flex-grow-1 mb-3">
+                      <svg class="flex-shrink-0" width="19" height="18" viewBox="0 0 19 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M16.2004 6.3375C15.4129 2.8725 12.3904 1.3125 9.73544 1.3125C9.73544 1.3125 9.73544 1.3125 9.72794 1.3125C7.08044 1.3125 4.05044 2.865 3.26294 6.33C2.38544 10.2 4.75544 13.4775 6.90044 15.54C7.69544 16.305 8.71544 16.6875 9.73544 16.6875C10.7554 16.6875 11.7754 16.305 12.5629 15.54C14.7079 13.4775 17.0779 10.2075 16.2004 6.3375ZM9.73544 10.095C8.43044 10.095 7.37294 9.0375 7.37294 7.7325C7.37294 6.4275 8.43044 5.37 9.73544 5.37C11.0404 5.37 12.0979 6.4275 12.0979 7.7325C12.0979 9.0375 11.0404 10.095 9.73544 10.095Z"
+                          fill="#E5E5E5" />
+                      </svg>
+                      <select class="flex-grow-1 w-100 bg-transparent outline-none border-0 fs-14">
                         <option>استان</option>
                         <option>استان</option>
                         <option>استان</option>
                         <option>استان</option>
                       </select>
-                      </div>
-                      <p class="mb-0 fs-14 text-red">وارد کردن این فیلد اجباری است.</p>
                     </div>
-                       <div class="flex-grow-1 w-sm-100">
-                         <div class="border rounded-10 p-3 d-flex align-items-center gap-2 flex-grow-1 mb-3">
-                            <svg class="flex-shrink-0" width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-       <path d="M16.2004 6.3375C15.4129 2.8725 12.3904 1.3125 9.73544 1.3125C9.73544 1.3125 9.73544 1.3125 9.72794 1.3125C7.08044 1.3125 4.05044 2.865 3.26294 6.33C2.38544 10.2 4.75544 13.4775 6.90044 15.54C7.69544 16.305 8.71544 16.6875 9.73544 16.6875C10.7554 16.6875 11.7754 16.305 12.5629 15.54C14.7079 13.4775 17.0779 10.2075 16.2004 6.3375ZM9.73544 10.095C8.43044 10.095 7.37294 9.0375 7.37294 7.7325C7.37294 6.4275 8.43044 5.37 9.73544 5.37C11.0404 5.37 12.0979 6.4275 12.0979 7.7325C12.0979 9.0375 11.0404 10.095 9.73544 10.095Z" fill="#E5E5E5"/>
-       </svg>
-                          <select class="flex-grow-1 w-100 bg-transparent outline-none border-0 fs-14">
-                           <option>شهر</option>
-                           <option>شهر</option>
-                           <option>شهر</option>
-                           <option>شهر</option>
-                         </select>
-                         </div>
-     <p class="mb-0 fs-14 text-red">وارد کردن این فیلد اجباری است.</p>
-                       </div>
+                    <p class="mb-0 fs-14 text-red">وارد کردن این فیلد اجباری است.</p>
+                  </div>
+                  <div class="flex-grow-1 w-sm-100">
+                    <div class="border rounded-10 p-3 d-flex align-items-center gap-2 flex-grow-1 mb-3">
+                      <svg class="flex-shrink-0" width="19" height="18" viewBox="0 0 19 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M16.2004 6.3375C15.4129 2.8725 12.3904 1.3125 9.73544 1.3125C9.73544 1.3125 9.73544 1.3125 9.72794 1.3125C7.08044 1.3125 4.05044 2.865 3.26294 6.33C2.38544 10.2 4.75544 13.4775 6.90044 15.54C7.69544 16.305 8.71544 16.6875 9.73544 16.6875C10.7554 16.6875 11.7754 16.305 12.5629 15.54C14.7079 13.4775 17.0779 10.2075 16.2004 6.3375ZM9.73544 10.095C8.43044 10.095 7.37294 9.0375 7.37294 7.7325C7.37294 6.4275 8.43044 5.37 9.73544 5.37C11.0404 5.37 12.0979 6.4275 12.0979 7.7325C12.0979 9.0375 11.0404 10.095 9.73544 10.095Z"
+                          fill="#E5E5E5" />
+                      </svg>
+                      <select class="flex-grow-1 w-100 bg-transparent outline-none border-0 fs-14">
+                        <option>شهر</option>
+                        <option>شهر</option>
+                        <option>شهر</option>
+                        <option>شهر</option>
+                      </select>
+                    </div>
+                    <p class="mb-0 fs-14 text-red">وارد کردن این فیلد اجباری است.</p>
+                  </div>
                 </div>
                 <div class="d-flex flex-column flex-sm-row align-items-center gap-2 mb-4">
-                  <div class="p-3 text-main3 border-main3 rounded-10 cursor-pointer fw-bold text-center flex-shrink-0 w-135 w-sm-100">بستن</div>
-                  <div class="p-3 text-white border-main3 bg-main text-center rounded-10 cursor-pointer fw-bold flex-grow-1 w-sm-100"> تایید و افزودن آدرس</div>
+                  <div
+                    class="p-3 text-main3 border-main3 rounded-10 cursor-pointer fw-bold text-center flex-shrink-0 w-135 w-sm-100">
+                    بستن</div>
+                  <div
+                    class="p-3 text-white border-main3 bg-main text-center rounded-10 cursor-pointer fw-bold flex-grow-1 w-sm-100">
+                    تایید و افزودن آدرس</div>
                 </div>
-                    <div class="d-flex flex-column flex-sm-row align-items-center gap-2 mb-4">
-                  <div class="p-3 w-sm-100 w-135 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 text-main3 border-main3 rounded-10 cursor-pointer fw-bold text-center">
-                    <svg class="flex-shrink-0" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.59079 3.55994L12.4808 8.44994C13.0583 9.02744 13.0583 9.97244 12.4808 10.5499L7.59079 15.4399" stroke="#005AFE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+                <div class="d-flex flex-column flex-sm-row align-items-center gap-2 mb-4">
+                  <div
+                    class="p-3 w-sm-100 w-135 flex-shrink-0 d-flex align-items-center justify-content-center gap-1 text-main3 border-main3 rounded-10 cursor-pointer fw-bold text-center">
+                    <svg class="flex-shrink-0" width="19" height="19" viewBox="0 0 19 19" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7.59079 3.55994L12.4808 8.44994C13.0583 9.02744 13.0583 9.97244 12.4808 10.5499L7.59079 15.4399"
+                        stroke="#005AFE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
                     <p class="mb-0">مرحله قبل</p>
                   </div>
-                    <div class="p-3 w-sm-100 d-flex align-items-center justify-content-center gap-1 text-white bg-main border-main3 rounded-10 cursor-pointer fw-bold flex-grow-1 text-center">
+                  <div
+                    class="p-3 w-sm-100 d-flex align-items-center justify-content-center gap-1 text-white bg-main border-main3 rounded-10 cursor-pointer fw-bold flex-grow-1 text-center">
                     <p class="mb-0">ثبت اطلاعات و ادامه</p>
-                    <svg class="flex-shrink-0" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.2875 15.4401L6.39751 10.5501C5.82001 9.97256 5.82001 9.02756 6.39751 8.45006L11.2875 3.56006" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+                    <svg class="flex-shrink-0" width="18" height="19" viewBox="0 0 18 19" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.2875 15.4401L6.39751 10.5501C5.82001 9.97256 5.82001 9.02756 6.39751 8.45006L11.2875 3.56006"
+                        stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
                   </div>
                 </div>
                 <div>
@@ -4333,17 +4393,23 @@
                       </label>
                     </div>
                     <p class="fs-12 fw-bold text-center mb-3">تصویر روی کارت ملی هوشمند</p>
-                    <p class="fs-10 text-center text-secondary">تصویر روی کارت ملی با فرمت JPG یا PNG و حجم حداکثر ۴ مگابایت</p>
-                    <div class="d-flex align-items-center justify-content-center gap-2 text-white bg-main fw-bold rounded-10 p-3 cursor-pointer position-relative">
-                      <input type="file" class="position-absolute end-0 start-0 bottom-0 top-0 w-100 h-100 opacity-none z-10 cursor-pointer">
+                    <p class="fs-10 text-center text-secondary">تصویر روی کارت ملی با فرمت JPG یا PNG و حجم حداکثر ۴
+                      مگابایت</p>
+                    <div
+                      class="d-flex align-items-center justify-content-center gap-2 text-white bg-main fw-bold rounded-10 p-3 cursor-pointer position-relative">
+                      <input type="file"
+                        class="position-absolute end-0 start-0 bottom-0 top-0 w-100 h-100 opacity-none z-10 cursor-pointer">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M16.8 9H12.75V13.44L14.82 11.37C14.97 11.22 15.16 11.15 15.35 11.15C15.54 11.15 15.73 11.22 15.88 11.37C16.17 11.66 16.17 12.14 15.88 12.43L12.53 15.78C12.24 16.07 11.76 16.07 11.47 15.78L8.12 12.43C7.83 12.14 7.83 11.66 8.12 11.37C8.41 11.08 8.89 11.08 9.18 11.37L11.25 13.44V9H7.2C4 9 2 11 2 14.2V16.79C2 20 4 22 7.2 22H16.79C19.99 22 21.99 20 21.99 16.8V14.2C22 11 20 9 16.8 9Z" fill="white"/>
-  <path d="M12.75 2.75C12.75 2.34 12.41 2 12 2C11.59 2 11.25 2.34 11.25 2.75V9H12.75V2.75Z" fill="white"/>
-  </svg>
+                        <path
+                          d="M16.8 9H12.75V13.44L14.82 11.37C14.97 11.22 15.16 11.15 15.35 11.15C15.54 11.15 15.73 11.22 15.88 11.37C16.17 11.66 16.17 12.14 15.88 12.43L12.53 15.78C12.24 16.07 11.76 16.07 11.47 15.78L8.12 12.43C7.83 12.14 7.83 11.66 8.12 11.37C8.41 11.08 8.89 11.08 9.18 11.37L11.25 13.44V9H7.2C4 9 2 11 2 14.2V16.79C2 20 4 22 7.2 22H16.79C19.99 22 21.99 20 21.99 16.8V14.2C22 11 20 9 16.8 9Z"
+                          fill="white" />
+                        <path d="M12.75 2.75C12.75 2.34 12.41 2 12 2C11.59 2 11.25 2.34 11.25 2.75V9H12.75V2.75Z"
+                          fill="white" />
+                      </svg>
                       <p class="mb-0">باگذاری</p>
                     </div>
                   </div>
-   <div class="border rounded-10 p-3 mb-4">
+                  <div class="border rounded-10 p-3 mb-4">
                     <div class="d-flex align-items-center gap-4">
                       <img alt="img" src="images/image 5.png" class="w-42 h-28">
                       <label class="cursor-pointer d-flex align-items-center gap-2">
@@ -4352,44 +4418,60 @@
                       </label>
                     </div>
                   </div>
-                     <div class="border rounded-10 p-3 mb-4">
+                  <div class="border rounded-10 p-3 mb-4">
                     <div class="d-flex align-items-center gap-4">
-                      <svg class="flex-shrink-0 w-42 h-28" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M22 7.5499C22 8.2099 21.46 8.7499 20.8 8.7499H3.2C2.54 8.7499 2 8.2099 2 7.5499V7.5399C2 5.2499 3.85 3.3999 6.14 3.3999H17.85C20.14 3.3999 22 5.2599 22 7.5499Z" fill="#005AFE"/>
-<path d="M2 11.45V16.46C2 18.75 3.85 20.6 6.14 20.6H17.85C20.14 20.6 22 18.74 22 16.45V11.45C22 10.79 21.46 10.25 20.8 10.25H3.2C2.54 10.25 2 10.79 2 11.45ZM8 17.25H6C5.59 17.25 5.25 16.91 5.25 16.5C5.25 16.09 5.59 15.75 6 15.75H8C8.41 15.75 8.75 16.09 8.75 16.5C8.75 16.91 8.41 17.25 8 17.25ZM14.5 17.25H10.5C10.09 17.25 9.75 16.91 9.75 16.5C9.75 16.09 10.09 15.75 10.5 15.75H14.5C14.91 15.75 15.25 16.09 15.25 16.5C15.25 16.91 14.91 17.25 14.5 17.25Z" fill="#005AFE"/>
-</svg>
+                      <svg class="flex-shrink-0 w-42 h-28" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M22 7.5499C22 8.2099 21.46 8.7499 20.8 8.7499H3.2C2.54 8.7499 2 8.2099 2 7.5499V7.5399C2 5.2499 3.85 3.3999 6.14 3.3999H17.85C20.14 3.3999 22 5.2599 22 7.5499Z"
+                          fill="#005AFE" />
+                        <path
+                          d="M2 11.45V16.46C2 18.75 3.85 20.6 6.14 20.6H17.85C20.14 20.6 22 18.74 22 16.45V11.45C22 10.79 21.46 10.25 20.8 10.25H3.2C2.54 10.25 2 10.79 2 11.45ZM8 17.25H6C5.59 17.25 5.25 16.91 5.25 16.5C5.25 16.09 5.59 15.75 6 15.75H8C8.41 15.75 8.75 16.09 8.75 16.5C8.75 16.91 8.41 17.25 8 17.25ZM14.5 17.25H10.5C10.09 17.25 9.75 16.91 9.75 16.5C9.75 16.09 10.09 15.75 10.5 15.75H14.5C14.91 15.75 15.25 16.09 15.25 16.5C15.25 16.91 14.91 17.25 14.5 17.25Z"
+                          fill="#005AFE" />
+                      </svg>
                       <label class="cursor-pointer d-flex align-items-center gap-2">
                         <input type="radio" name="card" class="cursor-pointer form-check-input mt-0 bg-transparent">
                         <p class="fs-14 cursor-pointer mb-0">شماره کارت وارد میکنم.</p>
                       </label>
                     </div>
                   </div>
-                   <div class="border rounded-10 p-3 mb-4">
+                  <div class="border rounded-10 p-3 mb-4">
                     <div class="d-flex align-items-center gap-4 mb-5">
-                   <svg class="flex-shrink-0 w-42 h-28" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7 2H6C3 2 2 3.79 2 6V7V21C2 21.83 2.94 22.3 3.6 21.8L5.31 20.52C5.71 20.22 6.27 20.26 6.63 20.62L8.29 22.29C8.68 22.68 9.32 22.68 9.71 22.29L11.39 20.61C11.74 20.26 12.3 20.22 12.69 20.52L14.4 21.8C15.06 22.29 16 21.82 16 21V4C16 2.9 16.9 2 18 2H7ZM5.97 14.01C5.42 14.01 4.97 13.56 4.97 13.01C4.97 12.46 5.42 12.01 5.97 12.01C6.52 12.01 6.97 12.46 6.97 13.01C6.97 13.56 6.52 14.01 5.97 14.01ZM5.97 10.01C5.42 10.01 4.97 9.56 4.97 9.01C4.97 8.46 5.42 8.01 5.97 8.01C6.52 8.01 6.97 8.46 6.97 9.01C6.97 9.56 6.52 10.01 5.97 10.01ZM12 13.76H9C8.59 13.76 8.25 13.42 8.25 13.01C8.25 12.6 8.59 12.26 9 12.26H12C12.41 12.26 12.75 12.6 12.75 13.01C12.75 13.42 12.41 13.76 12 13.76ZM12 9.76H9C8.59 9.76 8.25 9.42 8.25 9.01C8.25 8.6 8.59 8.26 9 8.26H12C12.41 8.26 12.75 8.6 12.75 9.01C12.75 9.42 12.41 9.76 12 9.76Z" fill="#005AFE"/>
-<path d="M18.01 2V3.5C18.67 3.5 19.3 3.77 19.76 4.22C20.24 4.71 20.5 5.34 20.5 6V8.42C20.5 9.16 20.17 9.5 19.42 9.5H17.5V4.01C17.5 3.73 17.73 3.5 18.01 3.5V2ZM18.01 2C16.9 2 16 2.9 16 4.01V11H19.42C21 11 22 10 22 8.42V6C22 4.9 21.55 3.9 20.83 3.17C20.1 2.45 19.11 2.01 18.01 2C18.02 2 18.01 2 18.01 2Z" fill="#005AFE"/>
-</svg>
+                      <svg class="flex-shrink-0 w-42 h-28" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M7 2H6C3 2 2 3.79 2 6V7V21C2 21.83 2.94 22.3 3.6 21.8L5.31 20.52C5.71 20.22 6.27 20.26 6.63 20.62L8.29 22.29C8.68 22.68 9.32 22.68 9.71 22.29L11.39 20.61C11.74 20.26 12.3 20.22 12.69 20.52L14.4 21.8C15.06 22.29 16 21.82 16 21V4C16 2.9 16.9 2 18 2H7ZM5.97 14.01C5.42 14.01 4.97 13.56 4.97 13.01C4.97 12.46 5.42 12.01 5.97 12.01C6.52 12.01 6.97 12.46 6.97 13.01C6.97 13.56 6.52 14.01 5.97 14.01ZM5.97 10.01C5.42 10.01 4.97 9.56 4.97 9.01C4.97 8.46 5.42 8.01 5.97 8.01C6.52 8.01 6.97 8.46 6.97 9.01C6.97 9.56 6.52 10.01 5.97 10.01ZM12 13.76H9C8.59 13.76 8.25 13.42 8.25 13.01C8.25 12.6 8.59 12.26 9 12.26H12C12.41 12.26 12.75 12.6 12.75 13.01C12.75 13.42 12.41 13.76 12 13.76ZM12 9.76H9C8.59 9.76 8.25 9.42 8.25 9.01C8.25 8.6 8.59 8.26 9 8.26H12C12.41 8.26 12.75 8.6 12.75 9.01C12.75 9.42 12.41 9.76 12 9.76Z"
+                          fill="#005AFE" />
+                        <path
+                          d="M18.01 2V3.5C18.67 3.5 19.3 3.77 19.76 4.22C20.24 4.71 20.5 5.34 20.5 6V8.42C20.5 9.16 20.17 9.5 19.42 9.5H17.5V4.01C17.5 3.73 17.73 3.5 18.01 3.5V2ZM18.01 2C16.9 2 16 2.9 16 4.01V11H19.42C21 11 22 10 22 8.42V6C22 4.9 21.55 3.9 20.83 3.17C20.1 2.45 19.11 2.01 18.01 2C18.02 2 18.01 2 18.01 2Z"
+                          fill="#005AFE" />
+                      </svg>
                       <label class="cursor-pointer d-flex align-items-center gap-2">
                         <input type="radio" name="card" class="cursor-pointer form-check-input mt-0 bg-transparent">
                         <p class="fs-14 cursor-pointer mb-0">شماره شبا وارد میکنم.</p>
                       </label>
                     </div>
                     <div class="d-flex align-items-center gap-2">
-                       <p class="mb-0 fs-14 flex-shrink-0">شماره شبا ۱۴ رقمی</p>
-                       <input class="flex-grow-1 w-100 bg-transparent border-0 outline-none">
-                       <p class="mb-0 fs-14 flex-shrink-0">IR</p>
+                      <p class="mb-0 fs-14 flex-shrink-0">شماره شبا ۱۴ رقمی</p>
+                      <input class="flex-grow-1 w-100 bg-transparent border-0 outline-none">
+                      <p class="mb-0 fs-14 flex-shrink-0">IR</p>
                     </div>
                   </div>
                 </div>
                 <div class="d-flex align-items-center flex-column flex-sm-row gap-2 mb-5">
-                  <div class="p-3 text-main3 border-main3 rounded-10 cursor-pointer fw-bold text-center flex-shrink-0 w-135 w-sm-100">بستن</div>
-                  <div class="p-3 text-white border-main3 bg-main text-center rounded-10 cursor-pointer fw-bold flex-grow-1 w-sm-100"> تایید و افزودن حساب</div>
+                  <div
+                    class="p-3 text-main3 border-main3 rounded-10 cursor-pointer fw-bold text-center flex-shrink-0 w-135 w-sm-100">
+                    بستن</div>
+                  <div
+                    class="p-3 text-white border-main3 bg-main text-center rounded-10 cursor-pointer fw-bold flex-grow-1 w-sm-100">
+                    تایید و افزودن حساب</div>
                 </div>
               </form>
             </div>
           </div>
         </div>
+      </div>
+    </div>
   </section>
 
   <script src="https://code.highcharts.com/highcharts.js"></script>

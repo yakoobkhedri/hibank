@@ -1,3 +1,15 @@
+// menu
+
+let openSidebar = document.getElementById('openSidebar');
+let sidebar = document.getElementById('sidebar');
+let closeSidebar = document.getElementById('closeSidebar');
+
+openSidebar.addEventListener('click' , function () {
+  sidebar.classList.add('open');
+});
+closeSidebar.addEventListener('click' , function () {
+  sidebar.classList.remove('open');
+});
 // accordion
 
 function setupAccordion() {
