@@ -15,13 +15,56 @@
 
 <body>
 
+  <!-- details Modal -->
+  <div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered max-w-392 mx-auto">
+      <div class="position-relative">
+        <img alt="img" src="images/Rectangle 5.png" class="d-none d-sm-block position-absolute m-auto -right-31 start-0 top-0 bottom-0 w-447 h-330">
+        <div class="modal-content border-0 rounded-20 p-4 pt-0 position-relative">
+          <div class="modal-header border-0">
+            <div class="d-flex align-items-center justify-content-center gap-1 position-absolute end-0 start-0 mx-auto">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15.5962 2.60327H9.11624C5.35624 2.60327 5.06624 5.98327 7.09624 7.82327L17.6162 17.3833C19.6462 19.2233 19.3562 22.6033 15.5962 22.6033H9.11624C5.35624 22.6033 5.06624 19.2233 7.09624 17.3833L17.6162 7.82327C19.6462 5.98327 19.3562 2.60327 15.5962 2.60327Z"
+                  stroke="#598BF6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                <script xmlns="" />
+              </svg>
+              <p class="mb-0 fw-bold fs-18 text-main5">در حال بررسی</p>
+            </div>
+            <button type="button" class="bg-transparent border-0 me-auto ms-0 position-relative z-10 -left-29" data-bs-dismiss="modal" aria-label="Close">
+              <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.0841 21.8165L21.5694 13.3312" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M21.5694 21.8165L13.0841 13.3312" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <script xmlns="" />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="text-center fw-bold fs-18 mt-1 lh-lg mb-0">
+              درخواست شما در حال بررسی توسط کارشناسان HiBank است.
+            </p>
+            <div class="rounded-17 bg-gray10 overflow-hidden w-100 h-6 mt-5">
+              <div class="w-75 h-100 rounded-17 bg-main2"></div>
+            </div>
+            <p class="mb-0 fw-bold mt-3 text-center">۶۰٪ بررسی شده</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <section class="d-flex gap-3 m-md-5 m-3">
     <div id="sidebar" class="w-288 h-100vh overflow-1071-hidden overflow-auto flex-shrink-0">
       <div class="rounded-10 d-flex flex-column justify-content-between bg-white p-3 py-4 z-20">
         <div>
-          <svg id="closeSidebar" class="d-1071-none mb-3 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708"></path>
-            </svg>
+          <svg id="closeSidebar" class="d-1071-none mb-3 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="26"
+            height="26" fill="currentColor" viewBox="0 0 16 16">
+            <path
+              d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708">
+            </path>
+          </svg>
           <a><img class="w-71 h-71 rounded-circle d-block mx-auto" alt="logo" src="images/Ellipse 212.png"></a>
           <p class="fw-bold fs-18 text-center mt-3">مرتضی شکوری</p>
           <div
@@ -252,7 +295,8 @@
               <p class="mb-0 fs-14">مبلغ ۲۰ میلیون تومان به کیف پول شما واریز شد.</p>
             </div>
           </div>
-          <a class="fs-14 d-flex align-items-center gap-2 text-dark">
+          <a data-bs-toggle="modal" data-bs-target="#detailsModal"
+            class="fs-14 d-flex align-items-center gap-2 text-dark">
             <p class="mb-0">مشاهده جزییات</p>
             <svg width="7" height="14" viewBox="0 0 7 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.99998 12.28L1.65331 7.9333C1.13998 7.41997 1.13998 6.57997 1.65331 6.06664L5.99998 1.71997"

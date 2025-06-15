@@ -296,7 +296,10 @@ footer p,
     max-width: 358px;
     width: 100%;
 }
-
+.max-w-392 {
+    max-width: 392px;
+    width: 100%;
+}
 .max-w-400 {
     max-width: 400px;
     width: 100%;
@@ -590,7 +593,9 @@ footer p,
 .w-320 {
     width: 320px;
 }
-
+.w-447 {
+    width: 447px;
+}
 .w-650 {
     width: 650px;
 }
@@ -721,7 +726,9 @@ footer p,
 .h-260 {
     height: 260px;
 }
-
+.h-330 {
+    height: 330px;
+}
 .d-1071-none {
     display: none;
 }
@@ -857,6 +864,9 @@ footer p,
 }
 .text-main4{
     color: #005AFE80;
+}
+.text-main5{
+    color: #598BF6;
 }
 .text-yellow {
     color: #FFD500;
@@ -998,7 +1008,9 @@ input:focus {
 .left-25 {
     left: 25px;
 }
-
+.-left-29 {
+    left: -29px;
+}
 .left-46 {
     left: 46px;
 }
@@ -1017,7 +1029,9 @@ input:focus {
 .right-4 {
     right: 4px;
 }
-
+.-right-31 {
+    right: -31px;
+}
 .right-118 {
     right: 118px;
 }
