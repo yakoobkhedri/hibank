@@ -14,6 +14,55 @@
 
 <body>
 
+  <!-- details Modal -->
+  <div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered max-w-392 mx-auto">
+      <div class="position-relative w-100">
+        <img alt="img" src="images/Rectangle 5.png"
+          class="d-none d-sm-block position-absolute m-auto -right-31 start-0 top-0 bottom-0 w-447 h-330">
+        <div class="modal-content border-0 rounded-20 p-3 pt-2 position-relative">
+          <div class="modal-header border-0">
+            <div class="d-flex align-items-center justify-content-center gap-1 position-absolute end-0 start-0 mx-auto">
+              <p class="mb-0 fw-bold fs-18 text-main5">شرایط وام</p>
+            </div>
+            <button type="button" class="bg-transparent border-0 me-auto ms-0 position-relative z-10 -left-29"
+              data-bs-dismiss="modal" aria-label="Close">
+              <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.0841 21.8165L21.5694 13.3312" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M21.5694 21.8165L13.0841 13.3312" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <script xmlns="" />
+              </svg>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex align-items-center justify-content-between gap-2 mb-4 pb-2">
+              <p class="mb-0 fs-14 fw-bold text-main3">میزان وام:</p>
+              <div class="d-flex align-items-center gap-2">
+                <p class="mb-0 fw-bold text-main3">۴۰/۰۰۰/۰۰۰</p>
+                <p class="mb-0 fs-12 text-main3">تومان</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between gap-2 mb-4 pb-2">
+              <p class="mb-0 fs-14 fw-bold text-main3">میزان وام:</p>
+              <div class="d-flex align-items-center gap-2">
+                <p class="mb-0 fw-bold text-main3">۴۰/۰۰۰/۰۰۰</p>
+                <p class="mb-0 fs-12 text-main3">تومان</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between gap-2 mb-4 pb-2">
+              <p class="mb-0 fs-14 fw-bold text-main3">میزان وام:</p>
+              <div class="d-flex align-items-center gap-2">
+                <p class="mb-0 fw-bold text-main3">۴۰/۰۰۰/۰۰۰</p>
+                <p class="mb-0 fs-12 text-main3">تومان</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <section class="d-flex gap-5 m-4">
     <div class="rounded-10 bg-sky3 p-4 w-320 flex-shrink-0">
@@ -322,7 +371,7 @@
           </a>
         </div>
       </div>
-       <div class="d-none">
+      <div>
         <div class="d-flex align-items-center gap-3 position-relative mb-4">
           <div class="w-40 h-40 d-flex align-items-center justify-content-center bg-sky3 rounded-10">
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -340,31 +389,41 @@
           </div>
         </div>
         <div class="max-w-344 mx-auto">
-          <img alt="img"
-            src="images/open-folder-folder-with-documents-document-protection-concept_183665-104.png"
+          <img alt="img" src="images/open-folder-folder-with-documents-document-protection-concept_183665-104.png"
             class="mx-auto w-271 d-block">
           <p class="fw-bold text-center mt-4 mb-5">
             مدارک شما کامل و تایید شده است.
- سقف وام شما ۱۵۰ میلیون تومان است. 
-لطفاً شرایط بازپرداخت را بررسی کرده و تایید نمایید
+            سقف وام شما ۱۵۰ میلیون تومان است.
+            لطفاً شرایط بازپرداخت را بررسی کرده و تایید نمایید
           </p>
           <div class="d-flex align-items-center gap-2 mb-4">
-                  <a class="p-3 text-main3 border-main3 rounded-10 cursor-pointer fw-bold text-center flex-shrink-0 w-135 w-sm-100">
-                    بررسی شرایط</a>
-                  <a class="p-3 text-white border-main3 bg-main text-center rounded-10 cursor-pointer fw-bold flex-grow-1 w-sm-100">
-                    تایید و واریز به کیف پول</a>
-                </div>
+            <a data-bs-toggle="modal" data-bs-target="#detailsModal"
+              class="p-3 text-main3 border-main3 rounded-10 cursor-pointer fw-bold text-center flex-shrink-0 w-135 w-sm-100">
+              بررسی شرایط</a>
+            <a
+              class="p-3 text-white border-main3 bg-main text-center rounded-10 cursor-pointer fw-bold flex-grow-1 w-sm-100">
+              تایید و واریز به کیف پول</a>
+          </div>
         </div>
       </div>
-         <div>
+      <div class="d-none">
         <div class="d-flex align-items-center gap-3 position-relative mb-4">
           <div class="w-40 h-40 d-flex align-items-center justify-content-center bg-sky3 rounded-10">
-          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M3.75 11.25C2.0925 11.25 0.75 12.5925 0.75 14.25C0.75 14.8125 0.907501 15.345 1.185 15.795C1.7025 16.665 2.655 17.25 3.75 17.25C4.845 17.25 5.7975 16.665 6.315 15.795C6.5925 15.345 6.75 14.8125 6.75 14.25C6.75 12.5925 5.4075 11.25 3.75 11.25ZM5.2275 14.0025L3.63 15.48C3.525 15.5775 3.3825 15.63 3.2475 15.63C3.105 15.63 2.9625 15.5775 2.85 15.465L2.1075 14.7225C1.89 14.505 1.89 14.145 2.1075 13.9275C2.325 13.71 2.685 13.71 2.9025 13.9275L3.2625 14.2875L4.4625 13.1775C4.6875 12.9675 5.0475 12.9825 5.2575 13.2075C5.4675 13.4325 5.4525 13.7925 5.2275 14.0025Z" fill="#005AFE"/>
-<path d="M13.3126 5.28748C13.1326 5.25748 12.9451 5.24999 12.7501 5.24999H5.25008C5.04008 5.24999 4.83758 5.26498 4.64258 5.29498C4.74758 5.08498 4.89758 4.89001 5.07758 4.71001L7.51508 2.265C8.54258 1.245 10.2076 1.245 11.2351 2.265L12.5476 3.59247C13.0276 4.06497 13.2826 4.66498 13.3126 5.28748Z" fill="#005AFE"/>
-<path opacity="0.4" d="M16.5 9V12.75C16.5 15 15 16.5 12.75 16.5H5.7225C5.955 16.305 6.1575 16.065 6.315 15.795C6.5925 15.345 6.75 14.8125 6.75 14.25C6.75 12.5925 5.4075 11.25 3.75 11.25C2.85 11.25 2.0475 11.6475 1.5 12.27V9C1.5 6.96 2.73 5.535 4.6425 5.295C4.8375 5.265 5.04 5.25 5.25 5.25H12.75C12.945 5.25 13.1325 5.25749 13.3125 5.28749C15.2475 5.51249 16.5 6.945 16.5 9Z" fill="#005AFE"/>
-<path d="M16.5 9.375H14.25C13.425 9.375 12.75 10.05 12.75 10.875C12.75 11.7 13.425 12.375 14.25 12.375H16.5" fill="#005AFE"/>
-<script xmlns=""/></svg>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M3.75 11.25C2.0925 11.25 0.75 12.5925 0.75 14.25C0.75 14.8125 0.907501 15.345 1.185 15.795C1.7025 16.665 2.655 17.25 3.75 17.25C4.845 17.25 5.7975 16.665 6.315 15.795C6.5925 15.345 6.75 14.8125 6.75 14.25C6.75 12.5925 5.4075 11.25 3.75 11.25ZM5.2275 14.0025L3.63 15.48C3.525 15.5775 3.3825 15.63 3.2475 15.63C3.105 15.63 2.9625 15.5775 2.85 15.465L2.1075 14.7225C1.89 14.505 1.89 14.145 2.1075 13.9275C2.325 13.71 2.685 13.71 2.9025 13.9275L3.2625 14.2875L4.4625 13.1775C4.6875 12.9675 5.0475 12.9825 5.2575 13.2075C5.4675 13.4325 5.4525 13.7925 5.2275 14.0025Z"
+                fill="#005AFE" />
+              <path
+                d="M13.3126 5.28748C13.1326 5.25748 12.9451 5.24999 12.7501 5.24999H5.25008C5.04008 5.24999 4.83758 5.26498 4.64258 5.29498C4.74758 5.08498 4.89758 4.89001 5.07758 4.71001L7.51508 2.265C8.54258 1.245 10.2076 1.245 11.2351 2.265L12.5476 3.59247C13.0276 4.06497 13.2826 4.66498 13.3126 5.28748Z"
+                fill="#005AFE" />
+              <path opacity="0.4"
+                d="M16.5 9V12.75C16.5 15 15 16.5 12.75 16.5H5.7225C5.955 16.305 6.1575 16.065 6.315 15.795C6.5925 15.345 6.75 14.8125 6.75 14.25C6.75 12.5925 5.4075 11.25 3.75 11.25C2.85 11.25 2.0475 11.6475 1.5 12.27V9C1.5 6.96 2.73 5.535 4.6425 5.295C4.8375 5.265 5.04 5.25 5.25 5.25H12.75C12.945 5.25 13.1325 5.25749 13.3125 5.28749C15.2475 5.51249 16.5 6.945 16.5 9Z"
+                fill="#005AFE" />
+              <path
+                d="M16.5 9.375H14.25C13.425 9.375 12.75 10.05 12.75 10.875C12.75 11.7 13.425 12.375 14.25 12.375H16.5"
+                fill="#005AFE" />
+              <script xmlns="" />
+            </svg>
           </div>
           <div class="flex-grow-1">
             <p class="fw-bold mb-0">شارژ کیف پول</p>
@@ -376,10 +435,11 @@
             class="mx-auto w-250 d-block">
           <p class="fw-bold text-center mt-4 mb-5 pb-4">
             تبــــریک!<br>
-مبلغ وام با موفقیت به کیف پول شما واریز شد.
+            مبلغ وام با موفقیت به کیف پول شما واریز شد.
           </p>
-                  <a class="p-3 text-white border-main3 bg-main text-center rounded-10 cursor-pointer fw-bold flex-grow-1 w-225 mx-auto mb-4 d-block">
-                    مشاهده کیف پول</a>
+          <a
+            class="p-3 text-white border-main3 bg-main text-center rounded-10 cursor-pointer fw-bold flex-grow-1 w-225 mx-auto mb-4 d-block">
+            مشاهده کیف پول</a>
         </div>
       </div>
     </div>
