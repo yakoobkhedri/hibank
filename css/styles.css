@@ -309,7 +309,10 @@ footer p,
     max-width: 415px;
     width: 100%;
 }
-
+.max-w-419 {
+    max-width: 419px;
+    width: 100%;
+}
 .max-w-471 {
     max-width: 471px;
     width: 100%;
@@ -349,7 +352,10 @@ footer p,
     max-width: 768px;
     width: 100%;
 }
-
+.max-w-1110 {
+    max-width: 1110px;
+    width: 100%;
+}
 .max-w-1280 {
     max-width: 1280px;
     width: 100%;
@@ -464,7 +470,9 @@ footer p,
 .w-38 {
     width: 38px;
 }
-
+.w-40 {
+    width: 40px;
+}
 .w-41 {
     width: 41px;
 }
@@ -485,7 +493,9 @@ footer p,
 .w-52 {
     width: 52px !important;
 }
-
+.w-53 {
+    width: 53px !important;
+}
 .w-55 {
     width: 55px !important;
 }
@@ -684,7 +694,9 @@ footer p,
 .h-52 {
     height: 52px !important;
 }
-
+.h-53 {
+    height: 53px !important;
+}
 .h-57 {
     height: 57px !important;
 }
@@ -1029,6 +1041,9 @@ input:focus {
 .right-4 {
     right: 4px;
 }
+.right-20 {
+    right: 20px;
+}
 .-right-31 {
     right: -31px;
 }
@@ -1143,6 +1158,9 @@ input:focus {
 .border-main3{
     border: 1px solid #005AFE;
 }
+.border-main4{
+    border: 1px solid #6DACFF;
+}
 .border-sky{
     border: 1px solid #EFF4FF;
 }
@@ -1206,6 +1224,9 @@ input:focus {
 }
 .bg-main4{
     background-color: #6DACFF;
+}
+.bg-white-50{
+    background-color: #FFFFFF80;
 }
 .bg-sky{
     background-color: #F6F9FF;
@@ -1642,7 +1663,7 @@ input[type=number] {
 input[type=number]:focus,
 .otp-input:focus,
 .otp-input.fill {
-    border: 1px solid #14489D !important;
+    border: 1px solid #005AFE !important;
     box-shadow: none;
 }
 
@@ -1809,7 +1830,10 @@ input[type='email'] {
 }
 
 @media (max-width: 992px) {
-
+    
+    .max-w-lg-full {
+        max-width: 100% !important;
+    }
     .-top-lg-19 {
         top: -19px;
     }
