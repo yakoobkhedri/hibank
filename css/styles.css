@@ -579,13 +579,21 @@ footer p,
 .w-215 {
     width: 215px;
 }
+.w-220 {
+    width: 220px;
+}
+.w-225 {
+    width: 225px;
+}
 .w-231 {
     width: 231px;
 }
 .w-235 {
     width: 235px;
 }
-
+.w-250 {
+    width: 250px;
+}
 .w-271 {
     width: 271px;
 }
@@ -1171,7 +1179,9 @@ input:focus {
 .border-gray {
     border: 1px solid #EDEDED;
 }
-
+.border-gray2{
+    border: 1px solid #E5E5E5;
+}
 .border-black-2 {
     border: 2px solid black;
 }
