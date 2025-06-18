@@ -523,6 +523,9 @@ footer p,
 .w-84 {
     width: 84px !important;
 }
+.w-88 {
+    width: 88px !important;
+}
 .w-112 {
     width: 112px;
 }
@@ -1026,7 +1029,94 @@ input {
 input:focus {
     box-shadow: none;
 }
-
+/* input range */
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #005AFE;
+  border-radius: 50px;
+  border: 0px solid #000000;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 1px #000000;
+  border: 0px solid #000000;
+  height: 13px;
+  width: 13px;
+  border-radius: 15px;
+  background: #005AFE;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -3.5px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #005AFE;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #005AFE;
+  border-radius: 50px;
+  border: 0px solid #000000;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 1px #000000;
+  border: 0px solid #000000;
+  height: 13px;
+  width: 13px;
+  border-radius: 15px;
+  background: #005AFE;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #005AFE;
+  border: 0px solid #000000;
+  border-radius: 100px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type=range]::-ms-fill-upper {
+  background: #005AFE;
+  border: 0px solid #000000;
+  border-radius: 100px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 1px #000000;
+  border: 0px solid #000000;
+  height: 13px;
+  width: 13px;
+  border-radius: 15px;
+  background: #005AFE;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #005AFE;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #005AFE;
+}
 /* left */
 .left-25 {
     left: 25px;
