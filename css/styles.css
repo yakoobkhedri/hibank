@@ -441,6 +441,9 @@ footer p,
 .w-1 {
     width: 1px;
 }
+.w-5 {
+    width: 5px;
+}
 .w-8 {
     width: 8px;
 }
@@ -1189,7 +1192,9 @@ input:focus {
 .border-t-main {
     border-top: 1px solid #164194;
 }
-
+.border-dashed-main{
+    border: 1px dashed #005AFE80;
+}
 /* after */
 .afterLine {
     position: relative;
