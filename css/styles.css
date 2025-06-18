@@ -467,7 +467,7 @@ footer p,
 }
 
 .w-36 {
-    width: 36px;
+    width: 36px !important;
 }
 
 .w-38 {
@@ -526,6 +526,9 @@ footer p,
 .w-88 {
     width: 88px !important;
 }
+.w-95 {
+    width: 95px !important;
+}
 .w-112 {
     width: 112px;
 }
@@ -567,13 +570,18 @@ footer p,
 .w-172 {
     width: 172px !important;
 }
-
+.w-174 {
+    width: 174px;
+}
 .w-180 {
     width: 180px !important;
 }
 
 .w-183 {
     width: 183px !important;
+}
+.w-190 {
+    width: 190px !important;
 }
 .w-199 {
     width: 199px !important;
@@ -623,7 +631,6 @@ footer p,
 .w-650 {
     width: 650px;
 }
-
 /* height */
 .h-1 {
     height: 1px;
@@ -672,7 +679,7 @@ footer p,
 }
 
 .h-36 {
-    height: 36px;
+    height: 36px !important;
 }
 
 .h-38 {
@@ -744,7 +751,9 @@ footer p,
 .h-142 {
     height: 142px;
 }
-
+.h-162 {
+    height: 162px;
+}
 .h-180 {
     height: 180px;
 }
@@ -1285,6 +1294,9 @@ input[type=range]:focus::-ms-fill-upper {
 .border-dashed-main{
     border: 1px dashed #005AFE80;
 }
+.border-dashed-main2{
+    border: 1px dashed #80ACFF;
+}
 /* after */
 .afterLine {
     position: relative;
@@ -1311,6 +1323,9 @@ input[type=range]:focus::-ms-fill-upper {
     height: 22px;
 }
 /* swiper */
+.after-main::after{
+    color: #005AFE;
+}
 .swiper-button-prev::after,.swiper-button-next::after {
   font-size: 12px !important;
   font-weight: bold !important;
