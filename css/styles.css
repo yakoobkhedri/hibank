@@ -517,6 +517,9 @@ footer p,
 .w-71 {
     width: 71px !important;
 }
+.w-74 {
+    width: 74px !important;
+}
 .w-78 {
     width: 78px !important;
 }
@@ -735,6 +738,9 @@ footer p,
 }
 .h-71 {
     height: 71px;
+}
+.h-74 {
+    height: 74px;
 }
 .h-96 {
     height: 96px;
@@ -1257,7 +1263,68 @@ input[type=range]:focus::-ms-fill-upper {
 .appearance-none {
     appearance: none;
 }
-
+/* chart */
+       .chart-container {
+            text-align: center;
+        }
+        
+        .pie-wrapper {
+            position: relative;
+            width: 142px;
+            height: 142px;
+        }
+        
+        .pie-chart {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            transition: background 0.3s ease;
+        }
+        
+        .hole {
+            position: absolute;
+            width: 60%; /* اندازه حفره */
+            height: 60%;
+            background: white; /* رنگ حفره */
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    
+        input {
+            width: 60px;
+            padding: 5px;
+            margin: 0 5px;
+        }
+        
+        button {
+            padding: 8px 15px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        
+        .legend {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 34px;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+        }
+        
+        .legend-color {
+            width: 15px;
+            height: 15px;
+            border-radius: 5px;
+            margin-left: 5px;
+        }
 /* border */
 .border-main {
     border: 1px solid #164194;
