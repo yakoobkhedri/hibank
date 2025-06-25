@@ -431,6 +431,11 @@ footer p,
 .fs-60 {
     font-size: 60px !important;
 }
+/* steps-sidebar */
+#steps-sidebar{
+    position: sticky;
+    top: 18px;
+}
 /* overlay */
 #overlay2{
     position: fixed;

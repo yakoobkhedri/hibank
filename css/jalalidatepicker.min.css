@@ -249,7 +249,7 @@ jdp-container .jdp-day.today {
 
 jdp-container .jdp-day-name.selected,
 jdp-container .jdp-day.selected {
-    background-color: #020058 !important;
+    background-color: #005afe !important;
     color: #fff !important;
     opacity: 1 !important
 }
@@ -312,7 +312,7 @@ jdp-container .jdp-footer {
 jdp-container .jdp-btn-close,
 jdp-container .jdp-btn-empty,
 jdp-container .jdp-btn-today {
-    background: #020058;
+    background: #005afe;
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
