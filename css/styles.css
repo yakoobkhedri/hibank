@@ -1380,10 +1380,7 @@ input[type=range]:focus::-ms-fill-upper {
     top: 43px;
 }
 
-.form-check-input:checked {
-    background-color: #005afe !important;
-    border-color: #005afe;
-}
+
 
 .form-switch .form-check-input {
     width: 40px;
@@ -1724,7 +1721,31 @@ input::placeholder {
     background-color: white !important;
     cursor: default;
 }
-
+/* step tab */
+.stepTab.checked > svg.first{
+  display: block !important;
+}
+.stepTab.checked > svg.last{
+  display: none !important;
+}
+.stepTab.current > svg.first{
+  display: none !important;
+}
+.stepTab.current > svg.last{
+  display: block !important;
+}
+.stepTab.unchecked > svg.last,.stepTab.unchecked > svg.first{
+  display: none !important;
+}
+.stepTab.unchecked,.stepTab2.unchecked p.title{
+  color: #ABABAB;
+}
+.stepContent.first{
+    display: block;
+}
+.stepContent{
+    display: none;
+}
 /* tab */
 .tabContent>div>div {
     display: none;
