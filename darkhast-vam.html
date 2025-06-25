@@ -14,6 +14,8 @@
 
 <body>
 
+  <div id="overlay2" class="d-lg-none"></div>
+
   <!-- details Modal -->
   <div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered max-w-392 mx-auto">
@@ -64,8 +66,8 @@
     </div>
   </div>
 
-  <section class="d-flex gap-5 m-4">
-    <div class="rounded-10 bg-sky3 p-4 w-320 flex-shrink-0">
+  <section class="d-flex gap-lg-5 gap-4 m-sm-4 m-3">
+    <div class="rounded-10 bg-sky3 p-4 w-320 flex-shrink-0" id="steps-sidebar">
       <div class="position-relative">
         <img alt="img" src="images/Line 8.png" class="position-absolute right-20 top-0 bottom-0 h-100">
         <div class="stepTab2 d-flex align-items-start gap-3 position-relative mb-4">
@@ -215,7 +217,12 @@
         </div>
       </div>
     </div>
-    <div class="mt-3 flex-grow-1">
+    <div class="mt-sm-3 flex-grow-1">
+      <div class="d-lg-none mb-3" id="openSidebar">
+          <svg class="cursor-pointer" width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 5.995C2 5.445 2.446 5 2.995 5L11.005 5C11.2689 5 11.522 5.10483 11.7086 5.29143C11.8952 5.47803 12 5.73111 12 5.995C12 6.25889 11.8952 6.51197 11.7086 6.69857C11.522 6.88517 11.2689 6.99 11.005 6.99L2.995 6.99C2.445 6.99 2 6.545 2 5.995ZM2 12C2 11.45 2.446 11.005 2.995 11.005L21.005 11.005C21.2689 11.005 21.522 11.1098 21.7086 11.2964C21.8952 11.483 22 11.7361 22 12C22 12.2639 21.8952 12.517 21.7086 12.7036C21.522 12.8902 21.2689 12.995 21.005 12.995L2.995 12.995C2.445 12.995 2 12.549 2 12ZM2.995 17.01C2.73111 17.01 2.47803 17.1148 2.29143 17.3014C2.10483 17.488 2 17.7411 2 18.005C2 18.2689 2.10483 18.522 2.29143 18.7086C2.47803 18.8952 2.73111 19 2.995 19L15.005 19C15.1357 19 15.2651 18.9743 15.3858 18.9243C15.5065 18.8743 15.6162 18.801 15.7086 18.7086C15.801 18.6162 15.8743 18.5065 15.9243 18.3858C15.9743 18.2651 16 18.1357 16 18.005C16 17.8743 15.9743 17.7449 15.9243 17.6242C15.8743 17.5035 15.801 17.3938 15.7086 17.3014C15.6162 17.209 15.5065 17.1357 15.3858 17.0857C15.2651 17.0357 15.1357 17.01 15.005 17.01L2.995 17.01Z" fill="#1E2D48"></path>
+          </svg>
+        </div>
       <div id="step1" class="stepContent first" data-id="1">
         <div class="d-flex align-items-center gap-3 position-relative mb-3">
           <div class="w-40 h-40 d-flex align-items-center justify-content-center bg-sky3 rounded-10">
@@ -275,8 +282,8 @@
             <input class="w-100 flex-grow-1 border-0 outline-none fs-14" placeholder="درآمد ماهیانه">
             <p class="mb-0 fs-14 flex-shrink-0">ریال</p>
           </div>
-          <div class="d-flex align-items-center gap-2 mb-5">
-            <div class="h-48 rounded-10 px-3 d-flex align-items-center gap-2 border-gray2">
+          <div class="d-flex flex-column flex-sm-row align-items-center gap-sm-2 gap-4 mb-5">
+            <div class="h-48 w-sm-100 flex-grow-1 rounded-10 px-3 d-flex align-items-center gap-2 border-gray2">
               <svg class="flex-shrink-0" width="19" height="18" viewBox="0 0 19 18" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -289,7 +296,7 @@
               </svg>
               <input class="w-100 flex-grow-1 border-0 outline-none fs-14" placeholder="تاریخ تولد">
             </div>
-            <div class="h-48 rounded-10 px-3 d-flex align-items-center gap-2 border-gray2">
+            <div class="h-48 w-sm-100 flex-grow-1 rounded-10 px-3 d-flex align-items-center gap-2 border-gray2">
               <svg class="flex-shrink-0" width="18" height="18" viewBox="0 0 18 18" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -330,7 +337,7 @@
           <p class="mb-0 fw-bold">اعتبارسنجی</p>
         </div>
         <p class="fs-14 me-3 mb-4">برای مشخص شدن سقف وام، اطلاعات اعتبارسنجی شما به‌صورت خودکار بررسی می‌شود.</p>
-        <form class="border-dashed-main rounded-10 p-4 mb-4">
+        <form class="border-dashed-main rounded-10 p-sm-4 p-3 mb-4">
           <div class="d-flex align-items-center justify-content-between gap-2 mb-4">
             <p class="fs-12 fw-bold mb-0">نتیجه اعتبارسنجی</p>
             <div class="d-flex align-items-center gap-2">
@@ -344,7 +351,7 @@
             </div>
           </div>
           <div class="row g-4">
-            <div class="col-md-6">
+            <div class="col-lg-6">
               <div class="h-51 px-3 border-gray2 rounded-10 d-flex align-items-center justify-content-between gap-2">
                 <div class="d-flex align-items-center gap-2">
                   <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -358,7 +365,7 @@
                 <p class="mb-0 fs-12 text-gray">مجاز</p>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6">
               <div class="h-51 px-3 border-gray2 rounded-10 d-flex align-items-center justify-content-between gap-2">
                 <div class="d-flex align-items-center gap-2">
                   <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -372,7 +379,7 @@
                 <p class="mb-0 fs-12 text-gray">مجاز</p>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6">
               <div class="h-51 px-3 border-gray2 rounded-10 d-flex align-items-center justify-content-between gap-2">
                 <div class="d-flex align-items-center gap-2">
                   <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -386,7 +393,7 @@
                 <p class="mb-0 fs-12 text-gray">ندارید</p>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6">
               <div class="h-51 px-3 border-gray2 rounded-10 d-flex align-items-center justify-content-between gap-2">
                 <div class="d-flex align-items-center gap-2">
                   <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -446,9 +453,9 @@
           <div class="w-5 h-24 bg-main"></div>
           <p class="mb-0 fw-bold">میزان وام</p>
         </div>
-        <div class="d-flex align-items-center justify-content-between gap-2 mb-5">
+        <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-5">
           <p class="fs-14 fw-bold mb-0">نوع ضمانت:</p>
-          <select class="fs-14 border-gray h-51 bg-transparent rounded-10 px-4">
+          <select class="fs-14 border-gray w-sm-100 h-51 bg-transparent rounded-10 px-4">
             <option>دو چک (چک صیادی خودم به همراه چک ضامن)</option>
             <option>دو چک (چک صیادی خودم به همراه چک ضامن)</option>
           </select>
@@ -572,7 +579,7 @@
           <p class="mb-0 fw-bold"> مدارک تکمیلی </p>
         </div>
         <div class="row g-4 mx-0 mb-5">
-  <div class="col-md-6">
+  <div class="col-lg-6">
     <div class="border-dashed-main2 rounded-10 p-4 text-center text-main3 h-162">
       <p class="fw-bold fs-14">تصویر روی کارت ملی</p>
       <p class="fs-12">فرمت‌های قابل قبول JPG , PNG, PDF
@@ -587,7 +594,7 @@
       <div id="errorMessage" class="text-danger fs-12 mt-2" style="display: none;"></div>
     </div>
   </div>
-  <div class="col-md-6">
+  <div class="col-lg-6">
     <div id="previewContainer" class="border-dashed-main2 rounded-10 p-4 text-center text-main3 h-162 position-relative" style="display: none;">
       <img id="previewImage" alt="img" class="d-block mx-auto h-100 rounded-5">
       <svg id="deleteButton" class="position-absolute top-0 start-0 cursor-pointer m-3" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -667,7 +674,7 @@
               سقف وام شما ۱۵۰ میلیون تومان است.
               لطفاً شرایط بازپرداخت را بررسی کرده و تایید نمایید
             </p>
-            <div class="d-flex align-items-center gap-2 mb-4">
+            <div class="d-flex flex-column flex-sm-row align-items-center gap-2 mb-4">
               <a data-bs-toggle="modal" data-bs-target="#detailsModal"
                 class="p-3 text-main3 border-main3 rounded-10 cursor-pointer fw-bold text-center flex-shrink-0 w-135 w-sm-100">
                 بررسی شرایط</a>

@@ -115,3 +115,19 @@ document.addEventListener('DOMContentLoaded', function() {
     fileInput.value = ''; // پاک کردن مقدار input file
   }
 });
+
+// sidebar
+
+let openSidebar = document.getElementById('openSidebar');
+let overlay2 = document.getElementById('overlay2');
+let stepsSidebar = document.getElementById('steps-sidebar');
+
+openSidebar.addEventListener('click' , function () {
+  stepsSidebar.classList.add('active');
+  overlay2.classList.add('active');
+});
+
+overlay2.addEventListener('click' , function () {
+  stepsSidebar.classList.remove('active');
+  overlay2.classList.remove('active');
+});
