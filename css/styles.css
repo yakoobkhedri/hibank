@@ -1,41 +1,41 @@
 @font-face {
-    font-family: 'pelak-Regular';
+    font-family: 'yekanBakh-Regular';
     font-weight: 400;
-    src: url('../fonts/woff/PelakFA-Regular.woff') format('woff');
+    src: url('../fonts/woff/YekanBakhFaNum-Regular.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'pelak-Medium';
+    font-family: 'yekanBakh-Medium';
     font-weight: 500;
-    src: url('../fonts/woff/PelakFA-Medium.woff') format('woff');
+    src: url('../fonts/woff/YekanBakhFaNum-SemiBold.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'pelak-semiBold';
+    font-family: 'yekanBakh-semiBold';
     font-weight: 600;
-    src: url('../fonts/woff/PelakFA-SemiBold.woff') format('woff');
+    src: url('../fonts/woff/YekanBakhFaNum-SemiBold.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'pelak-Bold';
+    font-family: 'yekanBakh-Bold';
     font-weight: 700;
-    src: url('../fonts/woff/PelakFA-Bold.woff') format('woff');
+    src: url('../fonts/woff/YekanBakhFaNum-Bold.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'pelak-ExtraBold';
+    font-family: 'yekanBakh-ExtraBold';
     font-weight: 800;
-    src: url('../fonts/woff/PelakFA-ExtraBold.woff') format('woff');
+    src: url('../fonts/woff/YekanBakhFaNum-ExtraBold.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'pelak-Black';
+    font-family: 'yekanBakh-Black';
     font-weight: 900;
-    src: url('../fonts/woff/PelakFA-Black.woff') format('woff');
+    src: url('../fonts/woff/YekanBakhFaNum-Black.woff') format('woff');
 }
 
 body {
-    font-family: 'pelak-Regular';
+    font-family: 'yekanBakh-Regular';
     user-select: none;
     overflow-x: hidden;
 }
@@ -50,17 +50,17 @@ input::placeholder {
 }
 
 .fw-Medium {
-    font-family: 'pelak-Medium' !important;
+    font-family: 'yekanBakh-Medium' !important;
     font-weight: 500;
 }
 
 .fw-semiBold {
-    font-family: 'pelak-semiBold' !important;
+    font-family: 'yekanBakh-semiBold' !important;
     font-weight: 600;
 }
 
 .fw-bold {
-    font-family: 'pelak-Bold';
+    font-family: 'yekanBakh-Bold';
     font-weight: 700;
 }
 
@@ -291,7 +291,10 @@ footer p,
     max-width: 344px;
     width: 100%;
 }
-
+.max-w-350 {
+    max-width: 350px;
+    width: 100%;
+}
 .max-w-358 {
     max-width: 358px;
     width: 100%;
@@ -494,7 +497,7 @@ footer p,
     width: 38px;
 }
 .w-40 {
-    width: 40px;
+    width: 40px !important;
 }
 .w-41 {
     width: 41px;
@@ -551,6 +554,9 @@ footer p,
 }
 .w-95 {
     width: 95px !important;
+}
+.w-99 {
+    width: 99px !important;
 }
 .w-112 {
     width: 112px;
@@ -714,7 +720,7 @@ footer p,
 }
 
 .h-40 {
-    height: 40px;
+    height: 40px !important;
 }
 
 .h-41 {
@@ -1217,7 +1223,9 @@ input[type=range]:focus::-ms-fill-upper {
 .top-18 {
     top: 18px;
 }
-
+.top-20 {
+    top: 20px;
+}
 .top-28 {
     top: 28px;
 }
@@ -1261,6 +1269,9 @@ input[type=range]:focus::-ms-fill-upper {
 /* bottom */
 .-bottom-96 {
     bottom: -96px;
+}
+.-bottom-36 {
+    bottom: -36px !important;
 }
 .bottom-24 {
     bottom: 24px;
@@ -1406,6 +1417,14 @@ input[type=range]:focus::-ms-fill-upper {
     width: 40px;
     height: 22px;
 }
+.month{
+  transition: all .4s;
+}
+.month.active{
+    font-size: 18px;
+    font-weight: bold;
+    color: #1E1E1E !important;
+}
 /* swiper */
 .after-main::after{
     color: #005AFE;
@@ -1413,6 +1432,9 @@ input[type=range]:focus::-ms-fill-upper {
 .swiper-button-prev::after,.swiper-button-next::after {
   font-size: 12px !important;
   font-weight: bold !important;
+}
+.swiper-pagination-bullet-active {
+  background: #005AFE !important;
 }
 /* background */
 .bg-main {
@@ -1590,7 +1612,9 @@ input::placeholder {
 .opacity-none {
     opacity: 0;
 }
-
+.opacity-25 {
+    opacity: 25%;
+}
 .opacity-50 {
     opacity: 50%;
 }
@@ -1980,7 +2004,7 @@ input[type='email'] {
 
 @media (max-width: 1070px) {
     #sidebar {
-        position: fixed;
+        position: fixed !important;
         top: 0;
         bottom: 0;
         right: -1148px;
