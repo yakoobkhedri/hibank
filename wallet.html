@@ -14,9 +14,9 @@
 
 <body>
 
-  <section class="row g-4 bg-sky3 m-4 p-3">
-    <div class="col-lg-8 mt-0">
-      <div class="bg-white rounded-10 p-3">
+  <section class="row g-4 bg-sky3 m-sm-4 p-3">
+    <div class="col-lg-8 mt-lg-0">
+      <div class="bg-white rounded-10 p-3 pb-5">
         <p class="fw-bold text-center fs-18">تعیین شرایط بازپرداخت و کیف پول</p>
         <div class="position-relative mt-4">
           <div class="swiper wallet">
@@ -110,106 +110,143 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-button-next w-40 h-40 border-black-2 rounded-circle"></div>
-            <div class="swiper-button-prev w-40 h-40 border-black-2 rounded-circle"></div>
+            <div class="swiper-button-next d-none d-sm-flex w-40 h-40 border-black-2 rounded-circle"></div>
+            <div class="swiper-button-prev d-none d-sm-flex w-40 h-40 border-black-2 rounded-circle"></div>
           </div>
           <div class="swiper-pagination -bottom-36"></div>
         </div>
-        <p class="fs-18 fw-bold text-center mt-5 pt-3">مدت بازپرداخت را انتخاب کنید</p>
-        <div class="d-flex align-items-center justify-content-center gap-5 mt-4">
-          <svg class="cursor-pointer" width="18" height="18" viewBox="0 0 18 18" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <rect width="18" height="18" rx="5" fill="white" />
-            <path d="M7.50008 12.96L10.7601 9.69998C11.1451 9.31498 11.1451 8.68498 10.7601 8.29998L7.50008 5.03998"
-              stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-              stroke-linejoin="round" />
-            <script xmlns="" />
-          </svg>
-          <p class="month mb-0 text-gray">6 ماهه</p>
-          <p class="month mb-0 text-gray active">12 ماهه</p>
-          <p class="month mb-0 text-gray">18 ماهه</p>
-          <svg class="cursor-pointer" width="18" height="18" viewBox="0 0 18 18" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <rect width="18" height="18" rx="5" transform="matrix(-1 0 0 1 18 0)" fill="white" />
-            <path d="M10.4999 12.96L7.23992 9.69998C6.85492 9.31498 6.85492 8.68498 7.23992 8.29998L10.4999 5.03998"
-              stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-              stroke-linejoin="round" />
-            <script xmlns="" />
-          </svg>
+         <div class="mt-5 pt-3">
+        <div>
+            <p class="fs-18 fw-bold text-center">مدت بازپرداخت را انتخاب کنید</p>
+            <div class="slider-container">
+                <button class="slider-arrow prev-arrow">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="18" height="18" rx="5" fill="white" />
+                        <path d="M7.50008 12.96L10.7601 9.69998C11.1451 9.31498 11.1451 8.68498 10.7601 8.29998L7.50008 5.03998" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                
+                <div class="slider-wrapper">
+                    <div class="slider-track">
+                        <!-- اسلایدها به صورت داینامیک با JavaScript اضافه می‌شوند -->
+                    </div>
+                </div>
+                
+                <button class="slider-arrow next-arrow">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="18" height="18" rx="5" transform="matrix(-1 0 0 1 18 0)" fill="white" />
+                        <path d="M10.4999 12.96L7.23992 9.69998C6.85492 9.31498 6.85492 8.68498 7.23992 8.29998L10.4999 5.03998" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
         </div>
-        <div class="mt-4">
-          <div>
-            <div class="rounded-10 bg-sky3 p-4 mb-5">
-              <div class="d-flex align-items-center justify-content-between gap-3 fs-14 fw-bold mb-3">
-                <p class="mb-0 text-main3 fs-14">میزان وام</p>
-                <div class="d-flex align-items-center gap-2">
-                  <p class="mb-0 fw-bold text-main3">۴۰/۰۰۰/۰۰۰</p>
-                  <p class="fs-12 text-main3 mb-0">تومان</p>
+        
+        <div class="mt-4 repayment-contents">
+            <!-- محتوا به صورت داینامیک با JavaScript اضافه می‌شود -->
+        </div>
+    </div>
+        <div>
+          <h5 class="fs-18 fw-bold text-center mt-4">انتقال اعتبار</h5>
+          <form class="mt-4">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="border px-3 fs-14 rounded-10 h-51 d-flex align-items-center gap-1">
+                  <p class="mb-0 flex-shrink-0">انتقال از کارت</p>
+                  <select class="fw-bold bg-transparent border-0 w-100 flex-grow-1">
+                    <option> اعتبار همکاران</option>
+                    <option> اعتبار همکاران</option>
+                    <option> اعتبار همکاران</option>
+                  </select>
                 </div>
               </div>
-              <img alt="img" src="images/Line 9.png" class="d-block w-100 mb-3 h-1">
-              <div class="d-flex align-items-center justify-content-between gap-3 fs-14 fw-bold mb-3">
-                <p class="mb-0 text-main3 fs-14">تعداد اقساط</p>
-                <div class="d-flex align-items-center gap-2">
-                  <p class="mb-0 fw-bold text-main3">12</p>
-                  <p class="fs-12 text-main3 mb-0">ماهه</p>
+              <div class="col-md-6">
+                <div class="border px-3 fs-14 rounded-10 h-51 d-flex align-items-center gap-1">
+                  <p class="mb-0 flex-shrink-0">به مقصد</p>
+                  <select class="fw-bold bg-transparent border-0 w-100 flex-grow-1">
+                    <option>کیف پول</option>
+                    <option>کیف پول</option>
+                    <option>کیف پول</option>
+                  </select>
                 </div>
               </div>
-              <img alt="img" src="images/Line 9.png" class="d-block w-100 mb-3 h-1">
-              <div class="d-flex align-items-center justify-content-between gap-3 fs-14 fw-bold">
-                <p class="mb-0 text-main3 fs-14">هر قسط</p>
-                <div class="d-flex align-items-center gap-2">
-                  <p class="mb-0 fw-bold text-main3">۲/۴۰۰/۰۰۰</p>
-                  <p class="fs-12 text-main3 mb-0">تومان</p>
+              <div class="col-md-6">
+                <div class="border px-3 fs-14 rounded-10 h-51 d-flex align-items-center gap-1">
+                  <svg class="flex-shrink-0" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.75 2.625H5.25C3 2.625 1.5 3.75 1.5 6.375V11.625C1.5 14.25 3 15.375 5.25 15.375H12.75C15 15.375 16.5 14.25 16.5 11.625V6.375C16.5 3.75 15 2.625 12.75 2.625ZM4.6875 10.875C4.6875 11.1825 4.4325 11.4375 4.125 11.4375C3.8175 11.4375 3.5625 11.1825 3.5625 10.875V7.125C3.5625 6.8175 3.8175 6.5625 4.125 6.5625C4.4325 6.5625 4.6875 6.8175 4.6875 7.125V10.875ZM9 11.25C7.755 11.25 6.75 10.245 6.75 9C6.75 7.755 7.755 6.75 9 6.75C10.245 6.75 11.25 7.755 11.25 9C11.25 10.245 10.245 11.25 9 11.25ZM14.4375 10.875C14.4375 11.1825 14.1825 11.4375 13.875 11.4375C13.5675 11.4375 13.3125 11.1825 13.3125 10.875V7.125C13.3125 6.8175 13.5675 6.5625 13.875 6.5625C14.1825 6.5625 14.4375 6.8175 14.4375 7.125V10.875Z"
+                      fill="#E5E5E5" />
+                    <script xmlns="" />
+                  </svg>
+                  <input class="border-0 outline-none w-100 flex-grow-1 bg-transparent" placeholder="مبلغ پرداخت">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="border px-3 fs-14 rounded-10 h-51 d-flex align-items-center gap-1">
+                  <svg class="flex-shrink-0" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.1">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.6488 9.35429C11.6406 12.3453 12.3193 8.88504 14.2242 10.7886C16.0607 12.6246 17.1162 12.9924 14.7894 15.3185C14.498 15.5528 12.6462 18.3707 6.13845 11.8647C-0.370108 5.358 2.44619 3.50433 2.68048 3.21296C5.0129 0.880385 5.3744 1.94204 7.21087 3.778C9.11577 5.68237 5.65699 6.36331 8.6488 9.35429Z"
+                        fill="black" />
+                    </g>
+                    <script xmlns="" />
+                  </svg>
+                  <input class="border-0 outline-none w-100 flex-grow-1 bg-transparent" placeholder="شماره موبایل">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="border px-3 fs-14 rounded-10 h-51 d-flex align-items-center gap-1">
+                  <input class="border-0 outline-none w-100 flex-grow-1 bg-transparent" placeholder="کد امنیتی">
+                  <svg class="flex-shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.5398 4.12L13.0398 2.06C12.4698 1.85 11.5398 1.85 10.9698 2.06L5.4698 4.12C4.4098 4.52 3.5498 5.76 3.5498 6.89V14.99C3.5498 15.8 4.0798 16.87 4.7298 17.35L10.2298 21.46C11.1998 22.19 12.7898 22.19 13.7598 21.46L19.2598 17.35C19.9098 16.86 20.4398 15.8 20.4398 14.99V6.89C20.4498 5.76 19.5898 4.52 18.5398 4.12ZM15.4798 9.72L11.1798 14.02C11.0298 14.17 10.8398 14.24 10.6498 14.24C10.4598 14.24 10.2698 14.17 10.1198 14.02L8.5198 12.4C8.2298 12.11 8.2298 11.63 8.5198 11.34C8.8098 11.05 9.2898 11.05 9.5798 11.34L10.6598 12.42L14.4298 8.65C14.7198 8.36 15.1998 8.36 15.4898 8.65C15.7798 8.94 15.7798 9.43 15.4798 9.72Z" fill="#A4A4A4"/>
+<script xmlns=""/></svg>
+                </div>
+              </div>
+               <div class="col-md-6">
+                <div class="border px-3 fs-14 rounded-10 h-51 d-flex align-items-center gap-1">
+                  <input class="border-0 outline-none w-100 flex-grow-1 bg-transparent fw-bold fs-24" value="۹۵۷۳۳۷">
+                  <svg class="flex-shrink-0 cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2ZM12 18.58C8.83 18.58 6.25 16 6.25 12.83C6.25 11.69 6.58 10.58 7.22 9.64C7.45 9.3 7.92 9.2 8.26 9.43C8.6 9.66 8.7 10.13 8.47 10.47C8 11.17 7.76 11.99 7.76 12.83C7.76 15.17 9.67 17.08 12.01 17.08C14.35 17.08 16.26 15.17 16.26 12.83C16.26 10.59 14.52 8.75 12.32 8.59L12.73 8.89C13.06 9.13 13.14 9.6 12.89 9.94C12.65 10.27 12.18 10.35 11.84 10.1L9.9 8.69C9.83 8.64 9.77 8.58 9.72 8.51C9.71 8.5 9.7 8.49 9.69 8.47C9.65 8.4 9.62 8.32 9.6 8.24C9.58 8.14 9.58 8.05 9.59 7.95C9.6 7.91 9.61 7.87 9.62 7.83C9.64 7.76 9.68 7.7 9.72 7.63C9.74 7.62 9.76 7.6 9.78 7.58L11.44 5.68C11.71 5.37 12.19 5.34 12.5 5.61C12.81 5.88 12.84 6.36 12.57 6.67L12.2 7.1C15.28 7.2 17.76 9.74 17.76 12.85C17.75 16 15.17 18.58 12 18.58Z" fill="#005AFE"/>
+<script xmlns=""/></svg>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="border pe-sm-3 pe-1 fs-14 rounded-10 overflow-hidden h-51 d-flex align-items-center gap-1">
+                  <input class="border-0 fs-sm-12 outline-none w-100 flex-grow-1 bg-transparent" placeholder="رمز دریافتی را وارد نمایید.">
+                  <button class="w-190 w-sm-121 flex-shrink-0 border-0 h-100 rounded-15 bg-main d-flex align-items-center justify-content-center gap-2 text-white">
+                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.125 6C16.1605 6 17 5.16053 17 4.125C17 3.08947 16.1605 2.25 15.125 2.25C14.0895 2.25 13.25 3.08947 13.25 4.125C13.25 5.16053 14.0895 6 15.125 6Z" fill="white"/>
+<path d="M15.125 6C16.1605 6 17 5.16053 17 4.125C17 3.08947 16.1605 2.25 15.125 2.25C14.0895 2.25 13.25 3.08947 13.25 4.125C13.25 5.16053 14.0895 6 15.125 6Z" fill="white"/>
+<path d="M16.04 6.9825C15.515 7.1475 14.9375 7.1775 14.3375 7.0275C13.3325 6.765 12.515 5.9625 12.2375 4.9575C12.1025 4.47 12.095 3.99 12.1775 3.555C12.275 3.075 11.9375 2.625 11.4575 2.625H5.75C3.5 2.625 2 3.75 2 6.375V11.625C2 14.25 3.5 15.375 5.75 15.375H13.25C15.5 15.375 17 14.25 17 11.625V7.695C17 7.2 16.52 6.825 16.04 6.9825ZM12.14 8.3625L11.255 9.0675C10.76 9.465 10.13 9.66 9.5 9.66C8.87 9.66 8.2325 9.465 7.745 9.0675L5.3975 7.1925C5.1575 6.9975 5.12 6.6375 5.3075 6.3975C5.5025 6.1575 5.855 6.1125 6.095 6.3075L8.4425 8.1825C9.0125 8.64 9.98 8.64 10.55 8.1825L11.435 7.4775C11.675 7.2825 12.035 7.32 12.2225 7.5675C12.4175 7.8075 12.38 8.1675 12.14 8.3625Z" fill="white"/>
+<script xmlns=""/></svg>
+                    <p class="mb-0 fs-14 fw-bold">دریافت رمز</p>
+                  </button>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="d-flex align-items-center justify-content-between gap-sm-5 gap-3">
+                   <button class="rounded-15 h-51 bg-green text-white fw-bold flex-grow-1">پرداخت</button>
+                   <button class="rounded-15 h-51 text-red border-red bg-transparent fw-bold flex-grow-1">انصراف</button>
                 </div>
               </div>
             </div>
-            <h5 class="fs-18 fw-bold text-center">جدول اقساط</h5>
-            <div class="px-3 mt-4">
-              <div class="row py-3 rounded-10 bg-sky3 fs-14 fw-bold text-main3 text-center">
-                <div class="col-3">شماره قسط</div>
-                <div class="col-3">تاریخ سررسید</div>
-                <div class="col-3">مبلغ قسط</div>
-                <div class="col-3">وضعیت</div>
-              </div>
-              <div class="row py-3 fs-14 text-dark text-center">
-                <div class="col-3">1</div>
-                <div class="col-3">۱۴۰۴/۰۴/۳۰</div>
-                <div class="col-3">۳,۴۶۶,۶۶۶</div>
-                <div class="col-3">پرداخت نشده</div>
-              </div>
-              <img alt="img" src="images/Line 9.png" class="d-block w-100 h-1">
-                <div class="row py-3 fs-14 text-dark text-center">
-                <div class="col-3">2</div>
-                <div class="col-3">۱۴۰۴/۰۴/۳۰</div>
-                <div class="col-3">۳,۴۶۶,۶۶۶</div>
-                <div class="col-3">پرداخت نشده</div>
-              </div>
-              <img alt="img" src="images/Line 9.png" class="d-block w-100 h-1">
-                 <div class="row py-3 fs-14 text-dark text-center">
-                <div class="col-3">3</div>
-                <div class="col-3">۱۴۰۴/۰۴/۳۰</div>
-                <div class="col-3">۳,۴۶۶,۶۶۶</div>
-                <div class="col-3">پرداخت نشده</div>
-              </div>
-            </div>
-             <h5 class="fs-18 fw-bold text-center mt-4">انتقال اعتبار</h5>
-          </div>
+          </form>
         </div>
       </div>
     </div>
-    <div class="col-lg-4 mt-0">
+    <div class="col-lg-4 mt-lg-0">
       <div class="bg-white rounded-10 p-3 pt-4 pb-5">
         <h5 class="fs-18 fw-bold mb-4">انتقال اعتبار</h5>
-        <p class="fs-18 mb-0 text-justify">
+        <p class="fs-18 mb-0 text-justify fs-sm-14">
           با استفاده از این بخش، می‌توانید اعتبار موجود خود را به سایر کیف‌پول‌ها یا کارت‌های تعریف‌شده منتقل نمایید.
           لطفاً پیش از انجام انتقال، از صحت اطلاعات مقصد و مبلغ وارد شده اطمینان حاصل فرمایید.
         </p>
-        <p class="fs-18 text-justify mb-4">
+        <p class="fs-18 fs-sm-14 text-justify mb-4">
           جهت تکمیل فرآیند، لازم است شماره مقصد، مبلغ انتقال، و رمز انتقال (در صورت نیاز) را وارد نمایید.
         </p>
         <h5 class="fs-18 fw-bold mb-4">نکات امنیتی</h5>
-        <ul class="fs-18 pe-4 m-0 text-justify">
+        <ul class="fs-18 fs-sm-14 pe-4 m-0 text-justify">
           <li>
             انتقال اعتبار تنها از طریق درگاه امن و محیط رمزنگاری‌شده انجام می‌شود.
           </li>
@@ -235,6 +272,7 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/scripts.js"></script>
+  <script src="js/wallet.js"></script>
 </body>
 
 </html>
