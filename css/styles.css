@@ -1688,10 +1688,10 @@ input::placeholder {
     color: #000;
     font-weight: bold;
 }
-.cartVamDetails{
+.cartVamDetails,.repaymentDetail{
     display: none;
 }
-.cartVamDetails.active{
+.cartVamDetails.active,.repaymentDetail.active,.repaymentDetail.first{
     display: block;
 }
 /* gap */
