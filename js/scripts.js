@@ -9,17 +9,3 @@ var months = new Swiper(".months", {
         prevEl: '.swiper-button-prev', // دکمه قبلی
     },
 });
-
-var wallet = new Swiper(".wallet", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    loop: true,
-    autoplay: true,
-    navigation: {
-        nextEl: '.swiper-button-next', // دکمه بعدی
-        prevEl: '.swiper-button-prev', // دکمه قبلی
-    },
-     pagination: {
-    el: ".swiper-pagination",
-  },
-});

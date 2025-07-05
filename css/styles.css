@@ -1678,67 +1678,20 @@ input::placeholder {
     display: block;
 }
 /* wallet */
-.slider-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    position: relative;
-    padding: 0 30px;
-    margin-top: 1rem;
-}
 
-.slider-wrapper {
-    width: 60%;
-    overflow: hidden;
-}
-
-.slider-track {
-    display: flex;
-    transition: transform 0.3s ease;
-}
-
-.slider-slide {
-    flex: 0 0 33.33%;
-    text-align: center;
-    padding: 5px 0;
-    cursor: pointer;
-}
-
-.slider-slide .month {
-    padding: 5px 15px;
-    border-radius: 20px;
+.repayment .swiper-slide {
     color: #888;
     transition: all 0.3s ease;
 }
 
-.slider-slide.active .month {
+.repayment .swiper-slide-active {
     color: #000;
     font-weight: bold;
 }
-
-.slider-arrow {
-    background: white;
-    border: none;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    padding: 0;
-}
-
-.slider-arrow svg {
-    pointer-events: none;
-}
-
-.repayment-content {
+.cartVamDetails{
     display: none;
 }
-
-.repayment-content.active {
+.cartVamDetails.active{
     display: block;
 }
 /* gap */
