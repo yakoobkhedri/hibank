@@ -1818,13 +1818,18 @@ input::placeholder {
     display: none;
 }
 /* tab */
-.tabContent>div>div {
+.tabContent>div>div,.monthcontent {
     display: none;
 }
 
-.tabContent>div>div.active {
+.tabContent>div>div.active,.monthcontent.active {
     display: block;
 }
+.installment-slider {
+  position: relative;
+}
+
+/* نمایش پیش‌فرض اولین ماه در هر اسلایدر */
 
 .tab {
     transition: all .4s;
