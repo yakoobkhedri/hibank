@@ -1,41 +1,41 @@
 @font-face {
-    font-family: 'yekanBakh-Regular';
+    font-family: 'IRANSansX-Regular';
     font-weight: 400;
-    src: url('../fonts/woff/YekanBakhFaNum-Regular.woff') format('woff');
+    src: url('../fonts/woff/IRANSansXFaNum-Regular.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'yekanBakh-Medium';
+    font-family: 'IRANSansX-Medium';
     font-weight: 500;
-    src: url('../fonts/woff/YekanBakhFaNum-SemiBold.woff') format('woff');
+    src: url('../fonts/woff/IRANSansXFaNum-DemiBold.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'yekanBakh-semiBold';
+    font-family: 'IRANSansX-semiBold';
     font-weight: 600;
-    src: url('../fonts/woff/YekanBakhFaNum-SemiBold.woff') format('woff');
+    src: url('../fonts/woff/IRANSansXFaNum-DemiBold.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'yekanBakh-Bold';
+    font-family: 'IRANSansX-Bold';
     font-weight: 700;
-    src: url('../fonts/woff/YekanBakhFaNum-Bold.woff') format('woff');
+    src: url('../fonts/woff/IRANSansXFaNum-Bold.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'yekanBakh-ExtraBold';
+    font-family: 'IRANSansX-ExtraBold';
     font-weight: 800;
-    src: url('../fonts/woff/YekanBakhFaNum-ExtraBold.woff') format('woff');
+    src: url('../fonts/woff/IRANSansXFaNum-ExtraBold.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'yekanBakh-Black';
+    font-family: 'IRANSansX-Black';
     font-weight: 900;
-    src: url('../fonts/woff/YekanBakhFaNum-Black.woff') format('woff');
+    src: url('../fonts/woff/IRANSansXFaNum-Black.woff') format('woff');
 }
 
 body {
-    font-family: 'yekanBakh-Regular';
+    font-family: 'IRANSansX-Regular';
     user-select: none;
     overflow-x: hidden;
 }
@@ -50,17 +50,17 @@ input::placeholder {
 }
 
 .fw-Medium {
-    font-family: 'yekanBakh-Medium' !important;
+    font-family: 'IRANSansX-Medium' !important;
     font-weight: 500;
 }
 
 .fw-semiBold {
-    font-family: 'yekanBakh-semiBold' !important;
+    font-family: 'IRANSansX-semiBold' !important;
     font-weight: 600;
 }
 
 .fw-bold {
-    font-family: 'yekanBakh-Bold';
+    font-family: 'IRANSansX-Bold';
     font-weight: 700;
 }
 
@@ -208,7 +208,7 @@ a:hover {
 #sidebar{
     border-radius: 10px;
     padding: 3px;
- background: linear-gradient(180deg, #005AFE 0%, #FFFFFF 32.34%, #FFFFFF 46.24%, #FFFFFF 56.15%, #FFFFFF 66.37%, #FFFFFF 82.82%, #FFFFFF 100%);
+ background: linear-gradient(180deg, #da1984 0%, #FFFFFF 32.34%, #FFFFFF 46.24%, #FFFFFF 56.15%, #FFFFFF 66.37%, #FFFFFF 82.82%, #FFFFFF 100%);
 }
 #footer {
     background-color: #F9FAFB;
@@ -927,13 +927,13 @@ footer p,
     color: #020058;
 }
 .text-main3{
-    color: #005AFE;
+    color: #da1984;
 }
 .text-main4{
-    color: #005AFE80;
+    color: #da198480;
 }
 .text-main5{
-    color: #598BF6;
+    color: #E975B5;
 }
 .text-yellow {
     color: #FFD500;
@@ -1085,7 +1085,7 @@ input[type=range]::-webkit-slider-runnable-track {
   cursor: pointer;
   animate: 0.2s;
   box-shadow: 0px 0px 0px #000000;
-  background: #005AFE;
+  background: #da1984;
   border-radius: 50px;
   border: 0px solid #000000;
 }
@@ -1095,13 +1095,13 @@ input[type=range]::-webkit-slider-thumb {
   height: 13px;
   width: 13px;
   border-radius: 15px;
-  background: #005AFE;
+  background: #da1984;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -3.5px;
 }
 input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #005AFE;
+  background: #da1984;
 }
 input[type=range]::-moz-range-track {
   width: 100%;
@@ -1109,7 +1109,7 @@ input[type=range]::-moz-range-track {
   cursor: pointer;
   animate: 0.2s;
   box-shadow: 0px 0px 0px #000000;
-  background: #005AFE;
+  background: #da1984;
   border-radius: 50px;
   border: 0px solid #000000;
 }
@@ -1119,7 +1119,7 @@ input[type=range]::-moz-range-thumb {
   height: 13px;
   width: 13px;
   border-radius: 15px;
-  background: #005AFE;
+  background: #da1984;
   cursor: pointer;
 }
 input[type=range]::-ms-track {
@@ -1132,13 +1132,13 @@ input[type=range]::-ms-track {
   color: transparent;
 }
 input[type=range]::-ms-fill-lower {
-  background: #005AFE;
+  background: #da1984;
   border: 0px solid #000000;
   border-radius: 100px;
   box-shadow: 0px 0px 0px #000000;
 }
 input[type=range]::-ms-fill-upper {
-  background: #005AFE;
+  background: #da1984;
   border: 0px solid #000000;
   border-radius: 100px;
   box-shadow: 0px 0px 0px #000000;
@@ -1149,14 +1149,14 @@ input[type=range]::-ms-thumb {
   height: 13px;
   width: 13px;
   border-radius: 15px;
-  background: #005AFE;
+  background: #da1984;
   cursor: pointer;
 }
 input[type=range]:focus::-ms-fill-lower {
-  background: #005AFE;
+  background: #da1984;
 }
 input[type=range]:focus::-ms-fill-upper {
-  background: #005AFE;
+  background: #da1984;
 }
 /* left */
 .left-25 {
@@ -1361,10 +1361,10 @@ input[type=range]:focus::-ms-fill-upper {
     border: 1px solid #164194;
 }
 .border-main2{
-    border: 1px solid #005AFE66;
+    border: 1px solid #da198466;
 }
 .border-main3{
-    border: 1px solid #005AFE;
+    border: 1px solid #da1984;
 }
 .border-main4{
     border: 1px solid #6DACFF;
@@ -1390,7 +1390,7 @@ input[type=range]:focus::-ms-fill-upper {
     border-top: 1px solid #164194;
 }
 .border-dashed-main{
-    border: 1px dashed #005AFE80;
+    border: 1px dashed #da198480;
 }
 .border-dashed-main2{
     border: 1px dashed #80ACFF;
@@ -1430,29 +1430,29 @@ input[type=range]:focus::-ms-fill-upper {
 }
 /* swiper */
 .after-main::after{
-    color: #005AFE;
+    color: #da1984;
 }
 .swiper-button-prev::after,.swiper-button-next::after {
   font-size: 12px !important;
   font-weight: bold !important;
 }
 .swiper-pagination-bullet-active {
-  background: #005AFE !important;
+  background: #da1984 !important;
 }
 /* background */
 .bg-main {
-    background-color: #005afe;
+    background-color: #da1984;
 }
 
 .bg-main2 {
-    background-color: #598BF6;
+    background-color: #E975B5;
 }
 
 .bg-main3 {
     background-color: #14489D33;
 }
 .bg-main4{
-    background-color: #6DACFF;
+    background-color: #e975b5;
 }
 .bg-white-50{
     background-color: #FFFFFF80;
@@ -1464,7 +1464,7 @@ input[type=range]:focus::-ms-fill-upper {
     background-color: #F0F6FF;
 }
 .bg-sky3{
-    background-color: #EBF4FF;
+    background-color: #D4F5F5;
 }
 .bg-yellow {
     background-color: #F29200;
@@ -1501,7 +1501,7 @@ input[type=range]:focus::-ms-fill-upper {
     background-color: #BBBBBB;
 }
 .bg-gray8{
-    background-color: #E8E7FB;
+    background-color: #27cccc;
 }
 .bg-gray9{
     background-color: #C3C3C3;
@@ -1758,7 +1758,7 @@ input::placeholder {
 #pannelList li>div:first-child.active,
 #pannelList li>div:first-child:hover,
 #pannelList li>div:first-child.active,.hover-1:hover {
-    background-color: #005AFE;
+    background-color: #da1984;
     color: white !important;
 }
 #pannelList li>a:hover p,
@@ -1856,7 +1856,7 @@ input::placeholder {
 .nav-tabs .nav-link.active::after{
     content: '';
     position: absolute;
-    background-color: #005AFE;
+    background-color: #da1984;
     width: 19px;
     height: 2px;
     left: 0;
@@ -1870,11 +1870,11 @@ input::placeholder {
     transition: all .4s;
 }
 .tabs:hover,.tabs.active{
-    border: 1px solid #005AFE;
-    color: #005AFE;
+    border: 1px solid #da1984;
+    color: #da1984;
 }
 .tabs:hover svg path,.tabs.active svg path{
-    stroke: #005AFE !important;
+    stroke: #da1984 !important;
 }
 /* scroll */
 .hiddenScroll::-webkit-scrollbar {
@@ -1947,7 +1947,7 @@ input[type=number] {
 input[type=number]:focus,
 .otp-input:focus,
 .otp-input.fill {
-    border: 1px solid #005AFE !important;
+    border: 1px solid #da1984 !important;
     box-shadow: none;
 }
 
