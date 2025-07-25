@@ -1725,12 +1725,23 @@ input::placeholder {
 .dark5hover:hover {
     color: #4F4F4F;
 }
-
+.main-hover,.main-hover2,.main-hover2 svg path{
+    transition: all .4s;
+}
 .main-hover:hover,
 .main-hover.active {
-    color: #164194 !important;
+    background-color: #27cccc !important;
+    border: 1px solid #27cccc;
 }
-
+.main-hover2:hover,
+.main-hover2.active {
+    background-color: #da1984 !important;
+    color: white;
+}
+.main-hover2:hover svg path,
+.main-hover2.active svg path {
+    stroke: white !important;
+}
 .closehover path {
     transition: all .4s;
 }
