@@ -158,22 +158,6 @@ a:hover {
 #navbar ul li a.link {
     color: #475467;
 }
-.wellcome{
-    background-image: url('../images/75072b91236319d0f88264e710b90c07.png');
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
-    height: 100vh;
-    position: relative;
-}
-.wellcome::before{
-    content: '';
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #164094cf;
-}
 /* banner */
 #banner {
     background-image: url('../images/banner/image\ 92.png');
@@ -301,6 +285,10 @@ footer p,
 }
 .max-w-392 {
     max-width: 392px;
+    width: 100%;
+}
+.max-w-380 {
+    max-width: 380px;
     width: 100%;
 }
 .max-w-400 {
@@ -1439,9 +1427,15 @@ input[type=range]:focus::-ms-fill-upper {
 .swiper-pagination-bullet-active {
   background: #da1984 !important;
 }
+.wellcomebox .swiper-button-next::after, .wellcomebox .swiper-button-prev::after {
+  content: none;
+}
+.wellcomebox .swiper-button-prev.swiper-button-disabled,.wellcomebox .swiper-button-next.swiper-button-disabled {
+  opacity: 0;
+}
 /* background */
 .bg-main {
-    background-color: #da1984;
+    background-color: #ed458e;
 }
 
 .bg-main2 {
@@ -1449,7 +1443,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .bg-main3 {
-    background-color: #14489D33;
+    background-color: #ffe0e8;
 }
 .bg-main4{
     background-color: #e975b5;

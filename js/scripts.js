@@ -31,3 +31,40 @@ document.querySelectorAll('.installment-slider').forEach(sliderContainer => {
     }
   });
 });
+var wellcome = new Swiper(".wellcome", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: false,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    on: {
+        init: function () {
+            updateNavigationButtons(this);
+        },
+        slideChange: function () {
+            updateNavigationButtons(this);
+        }
+    }
+});
+
+function updateNavigationButtons(swiper) {
+    const nextButton = document.querySelector('.swiper-button-next');
+    const prevButton = document.querySelector('.swiper-button-prev');
+    
+    if (swiper.isBeginning) {
+        // اسلاید اول - نمایش "شروع کن"
+        nextButton.textContent = 'شروع کن';
+        prevButton.style.display = 'none'; // مخفی کردن دکمه قبلی در اسلاید اول
+    } else if (swiper.isEnd) {
+        // اسلاید آخر - نمایش "ورود"
+        nextButton.textContent = 'ورود';
+        prevButton.style.display = 'flex'; // نمایش دکمه قبلی
+    } else {
+        // اسلایدهای میانی
+        nextButton.textContent = 'بعدی';
+        prevButton.style.display = 'flex'; // نمایش دکمه قبلی
+    }
+}
+
