@@ -31,13 +31,21 @@ document.querySelectorAll('.installment-slider').forEach(sliderContainer => {
     }
   });
 });
+
+
 var wellcome = new Swiper(".wellcome", {
     slidesPerView: 1,
     spaceBetween: 20,
     loop: false,
+       allowTouchMove: false, // غیرفعال کردن درگ
+    noSwiping: true, // غیرفعال کردن سوایپ
+    noSwipingClass: 'swiper-slide', // اعمال به تمام اسلایدها
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: ".swiper-pagination",
     },
     on: {
         init: function () {
@@ -52,19 +60,41 @@ var wellcome = new Swiper(".wellcome", {
 function updateNavigationButtons(swiper) {
     const nextButton = document.querySelector('.swiper-button-next');
     const prevButton = document.querySelector('.swiper-button-prev');
+    const loginButton = document.getElementById('login');
+    const signupButton = document.getElementById('signup');
+    
+    // مخفی کردن دکمه‌های ورود و ثبت نام به صورت پیش‌فرض
+    loginButton.style.display = 'none';
+    signupButton.style.display = 'none';
+    
+    // حذف کلاس‌های قبلی
+    nextButton.classList.remove('flex-grow-1');
+    prevButton.classList.remove('flex-grow-1');
     
     if (swiper.isBeginning) {
-        // اسلاید اول - نمایش "شروع کن"
+        // اسلاید اول
         nextButton.textContent = 'شروع کن';
-        prevButton.style.display = 'none'; // مخفی کردن دکمه قبلی در اسلاید اول
+        nextButton.classList.add('flex-grow-1');
+        prevButton.style.display = 'none';
     } else if (swiper.isEnd) {
-        // اسلاید آخر - نمایش "ورود"
-        nextButton.textContent = 'ورود';
-        prevButton.style.display = 'flex'; // نمایش دکمه قبلی
+        // اسلاید آخر
+        // مخفی کردن دکمه‌های ناوبری اصلی
+        nextButton.style.display = 'none';
+        prevButton.style.display = 'none';
+        
+        // نمایش دکمه‌های ورود و ثبت نام
+        loginButton.style.display = 'flex';
+        signupButton.style.display = 'flex';
+        
     } else {
         // اسلایدهای میانی
         nextButton.textContent = 'بعدی';
-        prevButton.style.display = 'flex'; // نمایش دکمه قبلی
+        prevButton.textContent = 'قبلی';
+        nextButton.classList.add('flex-grow-1');
+        prevButton.classList.add('flex-grow-1');
+        prevButton.style.display = 'flex';
+        nextButton.style.display = 'flex';
     }
 }
+
 
