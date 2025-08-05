@@ -37,9 +37,6 @@ var wellcome = new Swiper(".wellcome", {
     slidesPerView: 1,
     spaceBetween: 20,
     loop: false,
-       allowTouchMove: false, // غیرفعال کردن درگ
-    noSwiping: true, // غیرفعال کردن سوایپ
-    noSwipingClass: 'swiper-slide', // اعمال به تمام اسلایدها
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
