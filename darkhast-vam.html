@@ -501,29 +501,39 @@
             <p class="fs-14 text-main3 mb-0">۱۰۰/۰۰۰/۰۰۰</p>
           </div>
         </div>
-        <div class="mb-4">
+         <div class="mb-4">
   <div class="d-flex align-items-center justify-content-between gap-3 mb-4">
     <p class="mb-0 fs-14 fw-bold">مدت بازپرداخت:</p>
-    <div class="d-flex align-items-center gap-2">
-      <div id="prev-btn" class="w-36 h-36 border-main3 rounded-10 d-flex align-items-center justify-content-center cursor-pointer">
-        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M7.59082 3.55994L12.4808 8.44994C13.0583 9.02744 13.0583 9.97244 12.4808 10.5499L7.59082 15.4399" stroke="#da1984" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
+    <div class="d-flex align-items-center gap-2 position-relative" style="width: 206px;">
+      <!-- Swiper Container -->
+      <div class="swiper months-swiper w-99 h-36 bg-sky3 border-main3 -top-4 rounded-10">
+        <div class="swiper-wrapper text-center text-main3">
+          <div class="swiper-slide d-flex align-items-center justify-content-center">
+            <p class="mb-0 fw-bold">24 ماهه</p>
+          </div>
+          <div class="swiper-slide d-flex align-items-center justify-content-center">
+            <p class="mb-0 fw-bold">18 ماهه</p>
+          </div>
+          <div class="swiper-slide d-flex align-items-center justify-content-center">
+            <p class="mb-0 fw-bold">12 ماهه</p>
+          </div>
+        </div>
       </div>
-      <div class="w-112 h-43 bg-sky3 border-main3 rounded-10 d-flex align-items-center justify-content-center text-center">
-        <p id="duration-display" class="mb-0 fs-14 fw-bold text-main3">12 ماهه</p>
+      
+      <!-- Navigation Buttons -->
+      <div class="swiper-button-prev months-prev w-36 h-36 border-main3 rounded-10 d-flex align-items-center justify-content-center cursor-pointer">
+       
       </div>
-      <div id="next-btn" class="w-36 h-36 border-main3 rounded-10 d-flex align-items-center justify-content-center cursor-pointer">
-        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M7.20492 13.1775L1.04492 7.00001L7.20492 0.82251" stroke="#da1984" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
+      <div class="swiper-button-next months-next w-36 h-36 border-main3 rounded-10 d-flex align-items-center justify-content-center cursor-pointer">
+        
       </div>
     </div>
   </div>
-  
-  <div id="installment-options">
-    <!-- گزینه 12 ماهه -->
-    <div id="option-12" class="installment-option">
+
+  <!-- Installment Options -->
+  <div class="installment-options">
+    <!-- 24 Month Option -->
+    <div data-swiper-slide="0" class="installment-option">
       <div class="bg-sky3 rounded-10 d-flex align-items-center justify-content-between gap-3 p-3 fs-14 fw-bold mb-3">
         <p class="mb-0 text-main3">میزان وام</p>
         <div class="d-flex align-items-center gap-2">
@@ -534,21 +544,21 @@
       <div class="bg-sky3 rounded-10 d-flex align-items-center justify-content-between gap-3 p-3 fs-14 fw-bold mb-3">
         <p class="mb-0 text-main3">تعداد اقساط</p>
         <div class="d-flex align-items-center gap-2">
-          <p class="mb-0 fw-bold text-main3">12</p>
+          <p class="mb-0 fw-bold text-main3">24</p>
           <p class="fs-12 text-main3 mb-0">ماهه</p>
         </div>
       </div>
       <div class="bg-sky3 rounded-10 d-flex align-items-center justify-content-between gap-3 p-3 fs-14 fw-bold">
         <p class="mb-0 text-main3">هر قسط</p>
         <div class="d-flex align-items-center gap-2">
-          <p class="mb-0 fw-bold text-main3">۳/۴۰۰/۰۰۰</p>
+          <p class="mb-0 fw-bold text-main3">۱/۹۰۰/۰۰۰</p>
           <p class="fs-12 text-main3 mb-0">تومان</p>
         </div>
       </div>
     </div>
-    
-    <!-- گزینه 18 ماهه -->
-    <div id="option-18" class="installment-option d-none">
+
+    <!-- 18 Month Option -->
+    <div data-swiper-slide="1" class="installment-option d-none">
       <div class="bg-sky3 rounded-10 d-flex align-items-center justify-content-between gap-3 p-3 fs-14 fw-bold mb-3">
         <p class="mb-0 text-main3">میزان وام</p>
         <div class="d-flex align-items-center gap-2">
@@ -571,9 +581,9 @@
         </div>
       </div>
     </div>
-    
-    <!-- گزینه 24 ماهه -->
-    <div id="option-24" class="installment-option d-none">
+
+    <!-- 12 Month Option -->
+    <div data-swiper-slide="2" class="installment-option d-none">
       <div class="bg-sky3 rounded-10 d-flex align-items-center justify-content-between gap-3 p-3 fs-14 fw-bold mb-3">
         <p class="mb-0 text-main3">میزان وام</p>
         <div class="d-flex align-items-center gap-2">
@@ -584,14 +594,14 @@
       <div class="bg-sky3 rounded-10 d-flex align-items-center justify-content-between gap-3 p-3 fs-14 fw-bold mb-3">
         <p class="mb-0 text-main3">تعداد اقساط</p>
         <div class="d-flex align-items-center gap-2">
-          <p class="mb-0 fw-bold text-main3">24</p>
+          <p class="mb-0 fw-bold text-main3">12</p>
           <p class="fs-12 text-main3 mb-0">ماهه</p>
         </div>
       </div>
       <div class="bg-sky3 rounded-10 d-flex align-items-center justify-content-between gap-3 p-3 fs-14 fw-bold">
         <p class="mb-0 text-main3">هر قسط</p>
         <div class="d-flex align-items-center gap-2">
-          <p class="mb-0 fw-bold text-main3">۱/۹۰۰/۰۰۰</p>
+          <p class="mb-0 fw-bold text-main3">۳/۴۰۰/۰۰۰</p>
           <p class="fs-12 text-main3 mb-0">تومان</p>
         </div>
       </div>

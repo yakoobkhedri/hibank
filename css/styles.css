@@ -1193,6 +1193,9 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 /* top */
+.-top-4 {
+    top: -4px;
+}
 .top-6 {
     top: 6px;
 }
@@ -1446,12 +1449,15 @@ input[type=range]:focus::-ms-fill-upper {
     border-radius: 20px;
     opacity: 100%;
 }
+.swiper-button-next.months-next::after,.swiper-button-prev.months-prev::after{
+    color: #da1984;;
+}
 #login,#signup{
     display: none;
 }
 /* background */
 .bg-main {
-    background-color: #C12C63;
+    background-color: #da1984;
 }
 
 .bg-main2 {

@@ -209,48 +209,34 @@ overlay2.addEventListener('click' , function () {
 
   // change ghest month
 
-  document.addEventListener('DOMContentLoaded', function() {
-  const prevBtn = document.getElementById('prev-btn');
-  const nextBtn = document.getElementById('next-btn');
-  const durationDisplay = document.getElementById('duration-display');
-  const installmentOptions = document.querySelectorAll('.installment-option');
-  
-  const durations = [
-    { months: 12, display: '12 ماهه', installment: '۳/۴۰۰/۰۰۰' },
-    { months: 18, display: '18 ماهه', installment: '۲/۴۰۰/۰۰۰' },
-    { months: 24, display: '24 ماهه', installment: '۱/۹۰۰/۰۰۰' }
-  ];
-  
-  let currentIndex = 0;
-
-  // تابع برای به روز رسانی نمایش
-  function updateDisplay() {
-    // به روز رسانی متن مدت بازپرداخت
-    durationDisplay.textContent = durations[currentIndex].display;
-    
-    // مخفی کردن همه گزینه‌ها
-    installmentOptions.forEach(option => {
-      option.classList.add('d-none');
-    });
-    
-    // نمایش گزینه فعلی
-    document.getElementById(`option-${durations[currentIndex].months}`).classList.remove('d-none');
-  }
-
-  // رویداد کلیک برای دکمه قبلی
-  prevBtn.addEventListener('click', function() {
-    currentIndex = (currentIndex - 1 + durations.length) % durations.length;
-    updateDisplay();
+ document.addEventListener('DOMContentLoaded', function() {
+  // Initialize Swiper
+  const swiper = new Swiper('.months-swiper', {
+    direction: 'horizontal',
+    loop: false,
+    slidesPerView: 1,
+    centeredSlides: true,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: '.months-next',
+      prevEl: '.months-prev',
+    },
+    on: {
+      slideChange: function () {
+        // Hide all installment options
+        document.querySelectorAll('.installment-option').forEach(option => {
+          option.classList.add('d-none');
+        });
+        
+        // Show the active installment option
+        const activeIndex = this.activeIndex;
+        const activeOption = document.querySelector(`.installment-option[data-swiper-slide="${activeIndex}"]`);
+        if (activeOption) {
+          activeOption.classList.remove('d-none');
+        }
+      }
+    }
   });
-
-  // رویداد کلیک برای دکمه بعدی
-  nextBtn.addEventListener('click', function() {
-    currentIndex = (currentIndex + 1) % durations.length;
-    updateDisplay();
-  });
-
-  // مقداردهی اولیه
-  updateDisplay();
 });
 
 // datapicker
