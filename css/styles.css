@@ -2259,12 +2259,16 @@ input[type='email'] {
         border-radius: 10px;
     }
 
-    .bg-md-yellow {
-        background-color: #FFD500 !important;
+    .bg-md-main3 {
+        background-color: #da1984 !important;
     }
 
     .text-md-main {
         color: #164194 !important;
+    }
+
+    .text-md-white{
+        color: white;
     }
 
     .bg-md-transparent {
